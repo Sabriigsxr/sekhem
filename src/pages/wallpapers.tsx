@@ -2,27 +2,28 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import {Download, ArrowLeft, ShieldCheck} from 'lucide-react';
 import styles from './wallpapers.module.css';
 
 const WALLPAPERS = [
   {
     id: 'giza-night',
-    src: '/wallpapers/sekhem-giza-night.svg',
+    src: 'wallpapers/sekhem-giza-night.svg',
     title: 'Giza at Night',
     desc: 'The black desert, the obsidian pyramids, a torch of geometry and sand. Pyramids engraved with faint hieroglyphs, aurora-dim amber moon.',
     tag: 'SCENE',
   },
   {
     id: 'eye',
-    src: '/wallpapers/sekhem-eye.svg',
+    src: 'wallpapers/sekhem-eye.svg',
     title: 'The Eye',
     desc: 'Eye of Horus rendered in aged gold — circuit traces in faience teal beneath the sand. The mark of SEKHEM, for those who see.',
     tag: 'EMBLEM',
   },
   {
     id: 'hieroglyphs',
-    src: '/wallpapers/sekhem-hieroglyphs.svg',
+    src: 'wallpapers/sekhem-hieroglyphs.svg',
     title: 'Hieroglyph Field',
     desc: 'A full wall of the codex: ankh, eye, scarab, feather, water and sun, in a repeating cartouche grid under a black veil.',
     tag: 'PATTERN',
@@ -30,6 +31,7 @@ const WALLPAPERS = [
 ];
 
 export default function Wallpapers(): React.JSX.Element {
+  const baseUrl = useBaseUrl('/');
   return (
     <Layout>
       <Head>
@@ -59,7 +61,7 @@ export default function Wallpapers(): React.JSX.Element {
             {WALLPAPERS.map((w) => (
               <article key={w.id} className={styles.card}>
                 <div className={styles.frame}>
-                  <img src={w.src} alt={`SEKHEM wallpaper — ${w.title}`} loading="lazy" />
+                  <img src={`${baseUrl}${w.src}`} alt={`SEKHEM wallpaper — ${w.title}`} loading="lazy" />
                   <span className={styles.tag}>{w.tag}</span>
                 </div>
                 <div className={styles.body}>
@@ -67,7 +69,7 @@ export default function Wallpapers(): React.JSX.Element {
                   <p className={styles.cardDesc}>{w.desc}</p>
                   <div className={styles.footer}>
                     <span className={styles.meta}>SVG · 3840×2160 · ∞ resolution</span>
-                    <a className="pe-btn pe-btn--primary pe-btn--sm" href={w.src} download>
+                    <a className="pe-btn pe-btn--primary pe-btn--sm" href={`${baseUrl}${w.src}`} download>
                       <Download size={15} /> Download
                     </a>
                   </div>
