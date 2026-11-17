@@ -135,6 +135,9 @@ const config: Config = {
         },
         {to: '/references', label: 'References', position: 'left'},
         {to: '/learning-paths', label: 'Learning Paths', position: 'left'},
+        {to: '/vault', label: 'The Tomb', position: 'left'},
+        {to: '/scarab', label: 'The Scarab', position: 'left'},
+        {to: '/wallpapers', label: 'Wallpapers', position: 'left'},
         {to: '/contributing', label: 'Contribute', position: 'left'},
         {
           type: 'custom-horusEye',
@@ -161,6 +164,8 @@ const config: Config = {
             {label: 'The Codex', to: '/'},
             {label: 'Learning Paths', to: '/learning-paths'},
             {label: 'References Library', to: '/references'},
+            {label: 'The Tomb — Vault', to: '/vault'},
+            {label: 'The Scarab — Checklist', to: '/scarab'},
             {label: 'Wallpapers', to: '/wallpapers'},
           ],
         },

@@ -708,3 +708,87 @@ textarea:focus-visible, [role='button']:focus-visible {
 }
 .pe-sfxbtn:hover { border-color: var(--pe-gold); color: var(--pe-gold-bright); background: var(--ifm-menu-color-background-active); }
 .pe-sfxbtn[aria-pressed='true'] { border-color: var(--pe-gold); color: var(--pe-gold-bright); box-shadow: 0 0 12px rgba(201, 162, 39, 0.35); }
+
+/* ===== SEKHEM v3.2 — Book mode (the docs as a premium reading experience) ===== */
+
+/* Running header on every doc page — the book's spine */
+.markdown::before {
+  content: 'THE PHARAOH’S PENTEST CODEX';
+  display: block;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  color: var(--pe-muted);
+  padding-bottom: 0.9rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--pe-border);
+  opacity: 0.85;
+}
+
+/* The reading column — narrower, bookish */
+.docs-doc-page article.theme-doc-markdown,
+.theme-doc-markdown {
+  max-width: 44rem !important;
+  margin: 0 auto !important;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--ifm-font-color-base);
+}
+
+/* Drop cap on the opening paragraph */
+.theme-doc-markdown h1 + p::first-letter {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  font-weight: 900;
+  font-size: 2.6em;
+  line-height: 0.9;
+  float: left;
+  padding: 0.08em 0.18em 0 0;
+  color: var(--pe-gold);
+}
+
+/* Section ornaments */
+.theme-doc-markdown h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-size: 1.55rem !important;
+  letter-spacing: 0.01em;
+}
+.theme-doc-markdown h2::before {
+  content: '◆';
+  color: var(--pe-gold);
+  font-size: 0.62em;
+  transform: translateY(-0.08em);
+}
+
+/* Vertical rhythm */
+.theme-doc-markdown p { margin: 0 0 1.35rem; }
+.theme-doc-markdown li { margin-bottom: 0.45rem; }
+
+/* Ornamental divider */
+.theme-doc-markdown hr {
+  border: 0;
+  height: 1px;
+  width: 58%;
+  margin: 2.4rem auto;
+  background: linear-gradient(90deg, transparent, var(--pe-gold), transparent);
+}
+
+/* Comfortable code & inline code on the page */
+.theme-doc-markdown code { font-size: 0.85em; padding: 0.12em 0.4em; }
+
+/* Dim the chrome so the page speaks, not the frame */
+.breadcrumbs__link { color: var(--pe-muted); font-size: 0.78rem; }
+.theme-doc-toc-desktop .table-of-contents__link { color: var(--pe-muted); font-size: 0.8rem; line-height: 1.5; }
+.theme-doc-toc-desktop .table-of-contents__link--active { color: var(--pe-gold-bright) !important; }
+.theme-doc-toc-desktop .table-of-contents__link:hover { color: var(--ifm-color-primary); }
+
+/* Sidebar as quiet contents — whisper, don't shout */
+.theme-doc-sidebar-container { border-right: 1px solid var(--pe-border); }
+.menu { font-size: 0.84rem; }
+
+/* Light theme: keep the book feeling on papyrus */
+[data-theme='light'] .theme-doc-markdown::before { color: var(--pe-muted); }
+[data-theme='light'] .theme-doc-markdown hr { background: linear-gradient(90deg, transparent, #b08c35, transparent); }

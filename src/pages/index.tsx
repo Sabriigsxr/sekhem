@@ -84,8 +84,8 @@ function Hero(): React.JSX.Element {
 function Relics(): React.JSX.Element {
   const relics = [
     {icon: <ScrollText size={24} />, status: 'LIVE', live: true, title: 'The Codex', desc: 'The vault of knowledge you are inside — methodology & playbooks across 24 domains, fully searchable offline.', cta: 'Open The Codex', to: '/overview'},
-    {icon: <Vault size={24} />, status: 'IN FORGING', live: false, title: 'The Tomb', desc: 'The Vault — curated important files & PDFs, checksummed and sealed. Cracking the seal soon.', cta: 'Sealed for now', to: undefined as string | undefined},
-    {icon: <ListChecks size={24} />, status: 'IN FORGING', live: false, title: 'The Scarab', desc: 'The Checklist — tick-as-you-go assessments across every platform with progress, notes and export. Soon.', cta: 'Sealed for now', to: undefined as string | undefined},
+    {icon: <Vault size={24} />, status: 'LIVE', live: true, title: 'The Tomb', desc: 'The Vault — 104 important PDFs across 17 domains, each with a SHA-256 seal, searchable and downloadable.', cta: 'Open The Tomb', to: '/vault'},
+    {icon: <ListChecks size={24} />, status: 'LIVE', live: true, title: 'The Scarab', desc: 'The Checklist — tick-as-you-go assessments (WebApp & API), progress, notes, MD/JSON export. Local-first.', cta: 'Open The Scarab', to: '/scarab'},
   ];
   return (
     <section className={`pe-section ${styles.relicsSection}`} id="relics">

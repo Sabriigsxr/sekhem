@@ -1,0 +1,837 @@
+{
+ "generated": "2026-11-17T17:59:04Z",
+ "files": [
+  {
+   "id": "active-directory-pentesting-active-directory-attacks",
+   "title": "Active Directory Attacks",
+   "path": "/pdfs/active-directory-pentesting/Active Directory Attacks.pdf",
+   "category": "active-directory-pentesting",
+   "size": 541979,
+   "sha256": "d0530cf1fdceb292d01658ecaa2a11eb57b63f97821384fa89c2ed1e88464b08"
+  },
+  {
+   "id": "active-directory-pentesting-active-directory-check-list",
+   "title": "Active Directory Check List",
+   "path": "/pdfs/active-directory-pentesting/Active Directory Check List.pdf",
+   "category": "active-directory-pentesting",
+   "size": 19972797,
+   "sha256": "2ce8bb09959cd4cf1bfd94d6d1bb7319c5fe1331e2ee3af07f6345981692f6f6"
+  },
+  {
+   "id": "active-directory-pentesting-active-directory-penetration-testing-topic",
+   "title": "Active Directory Penetration Testing Topic",
+   "path": "/pdfs/active-directory-pentesting/Active Directory Penetration Testing Topic.pdf",
+   "category": "active-directory-pentesting",
+   "size": 1560843,
+   "sha256": "36989d25743279b0635e7d1f939e897936fd3aace286a90f1151d5555d46b2ef"
+  },
+  {
+   "id": "active-directory-pentesting-attacking-active-directory-with-linux",
+   "title": "Attacking Active Directory With LInux",
+   "path": "/pdfs/active-directory-pentesting/Attacking Active Directory With LInux.pdf",
+   "category": "active-directory-pentesting",
+   "size": 3065563,
+   "sha256": "acf41a641761b610eee8d61b11496383e889ee60b1594e19ffa19f4878cd7ee5"
+  },
+  {
+   "id": "active-directory-pentesting-offensive-enumeration-ad",
+   "title": "Offensive Enumeration AD",
+   "path": "/pdfs/active-directory-pentesting/Offensive Enumeration AD.pdf",
+   "category": "active-directory-pentesting",
+   "size": 763849,
+   "sha256": "1950ab2bd2670886c21405397bb3829c20010b94dd8035aeea93e31e6aeb1158"
+  },
+  {
+   "id": "active-directory-pentesting-windows-privilege-escalation",
+   "title": "Windows   Privilege Escalation",
+   "path": "/pdfs/active-directory-pentesting/Windows - Privilege Escalation.pdf",
+   "category": "active-directory-pentesting",
+   "size": 2840641,
+   "sha256": "f27970a4e57ee66cdbd805017b58b9ac6fe7b7dd4f243239c9d614f3dd1aba32"
+  },
+  {
+   "id": "api-pentesting-2023-api-security",
+   "title": "2023 API Security",
+   "path": "/pdfs/api-pentesting/2023 API Security.pdf",
+   "category": "api-pentesting",
+   "size": 354912,
+   "sha256": "bc20481913c9b40ece6bfce983cd73c2b8d2214bf32f84769c5bc9f484c13a61"
+  },
+  {
+   "id": "api-pentesting-api",
+   "title": "API",
+   "path": "/pdfs/api-pentesting/API .pdf",
+   "category": "api-pentesting",
+   "size": 708578,
+   "sha256": "574c7fb05d3b4fed787de9c280fa2894c7dbe22639e5bba586643e61ce832518"
+  },
+  {
+   "id": "api-pentesting-api-2019",
+   "title": "api 2019",
+   "path": "/pdfs/api-pentesting/api 2019.pdf",
+   "category": "api-pentesting",
+   "size": 1915069,
+   "sha256": "28107cf294b6536ce245e649560460b5c013b610e06da0fbc4e00169db6da051"
+  },
+  {
+   "id": "api-pentesting-api-penetration-examples",
+   "title": "API Penetration Examples",
+   "path": "/pdfs/api-pentesting/API_Penetration_Examples.pdf",
+   "category": "api-pentesting",
+   "size": 4312764,
+   "sha256": "9fdfc5c9bc800879609bf94fd0a3c4e38e4ab69450b1347a47c6eb3ca4388ae3"
+  },
+  {
+   "id": "api-pentesting-api-pt-with-basics-concepts",
+   "title": "API PT with Basics concepts",
+   "path": "/pdfs/api-pentesting/API PT with Basics concepts.pdf",
+   "category": "api-pentesting",
+   "size": 1283759,
+   "sha256": "021c488ecbcee88f999db5f8323d3dfa0dc43e95fb0df7ccee46aea42f84d89f"
+  },
+  {
+   "id": "api-pentesting-api-security-checklist",
+   "title": "API Security Checklist",
+   "path": "/pdfs/api-pentesting/API Security Checklist .pdf",
+   "category": "api-pentesting",
+   "size": 21960,
+   "sha256": "9387fa5c3bb633e2d4c3b07dce954e77e2ca760b65d9076137fafb01681ce6ad"
+  },
+  {
+   "id": "api-pentesting-api-security-testing",
+   "title": "API SECURITY TESTING",
+   "path": "/pdfs/api-pentesting/API SECURITY TESTING .pdf",
+   "category": "api-pentesting",
+   "size": 1283759,
+   "sha256": "021c488ecbcee88f999db5f8323d3dfa0dc43e95fb0df7ccee46aea42f84d89f"
+  },
+  {
+   "id": "api-pentesting-api-security-testing",
+   "title": "API Security Testing",
+   "path": "/pdfs/api-pentesting/API Security Testing.pdf",
+   "category": "api-pentesting",
+   "size": 2551557,
+   "sha256": "023255c6219cb9d62aa48cc650b96865d64bc1410c9d263bd16d5f16845d37c9"
+  },
+  {
+   "id": "api-pentesting-api-terminology-master",
+   "title": "API Terminology Master",
+   "path": "/pdfs/api-pentesting/API Terminology Master.pdf",
+   "category": "api-pentesting",
+   "size": 18147974,
+   "sha256": "6d6747ff60a8ef0578202e8d7248d8daf46ff4a75e4361cde4a01760deb99e46"
+  },
+  {
+   "id": "api-pentesting-api-testing",
+   "title": "API Testing",
+   "path": "/pdfs/api-pentesting/API Testing .pdf",
+   "category": "api-pentesting",
+   "size": 1253598,
+   "sha256": "442ed76d6552fb9c7a2effa5ac0dec0a2b190e0dd316bb818b5f7d84b934f629"
+  },
+  {
+   "id": "api-pentesting-end-to-end-api-security",
+   "title": "End to End API Security",
+   "path": "/pdfs/api-pentesting/End to End API Security.pdf",
+   "category": "api-pentesting",
+   "size": 1332468,
+   "sha256": "eb7972dd32f116c8f6caea9be41c21777871717fb360165529c0c85c04984b1e"
+  },
+  {
+   "id": "api-pentesting-owasp-top-10-api-security-risks",
+   "title": "OWASP Top 10 API Security Risks",
+   "path": "/pdfs/api-pentesting/OWASP Top 10 API Security Risks.pdf",
+   "category": "api-pentesting",
+   "size": 550898,
+   "sha256": "f7287de13ac42bc623a6e610ec4b19db9b4f642bdc5e53c76ec392e0706782b3"
+  },
+  {
+   "id": "api-pentesting-owasp-top-10-api-security-risks-1",
+   "title": "OWASP top 10 API security risks 1",
+   "path": "/pdfs/api-pentesting/OWASP top 10 API security risks-1.pdf",
+   "category": "api-pentesting",
+   "size": 550898,
+   "sha256": "f7287de13ac42bc623a6e610ec4b19db9b4f642bdc5e53c76ec392e0706782b3"
+  },
+  {
+   "id": "api-pentesting-top-api-breaches",
+   "title": "Top API Breaches",
+   "path": "/pdfs/api-pentesting/Top API Breaches.pdf",
+   "category": "api-pentesting",
+   "size": 1809475,
+   "sha256": "1cf8a5364a99f8592206001b034bf42150f9c680827afb02279df2871e0181a9"
+  },
+  {
+   "id": "ci-cd-pentesting-ci-cd-owasp-top-10",
+   "title": "CI CD OWASP TOP 10",
+   "path": "/pdfs/ci-cd-pentesting/CI_CD OWASP TOP 10 .pdf",
+   "category": "ci-cd-pentesting",
+   "size": 1570187,
+   "sha256": "6b5e1dde27b89af5e02c2f11ac9c5726bd7daf298b763abe382682958a21e06f"
+  },
+  {
+   "id": "cloud-pentesting-aws-cloud-security-checklist",
+   "title": "AWS Cloud Security Checklist",
+   "path": "/pdfs/cloud-pentesting/AWS Cloud Security Checklist.pdf",
+   "category": "cloud-pentesting",
+   "size": 1902535,
+   "sha256": "387d242ec0995cbcc9300d89eb40a12b0c5e28c3c432c9202f9039c07c422f02"
+  },
+  {
+   "id": "cloud-pentesting-aws-pentesting",
+   "title": "AWS Pentesting",
+   "path": "/pdfs/cloud-pentesting/AWS Pentesting.pdf",
+   "category": "cloud-pentesting",
+   "size": 338986,
+   "sha256": "65eb0efa5c50044e51b3d75fbb5ee79bd8a2d0ac2f502fc9fe7155265142fd57"
+  },
+  {
+   "id": "cloud-pentesting-aws-security-incident-response-guide-pdf",
+   "title": "AWS Security Incident Response Guide.pdf",
+   "path": "/pdfs/cloud-pentesting/AWS Security Incident Response Guide.pdf.pdf",
+   "category": "cloud-pentesting",
+   "size": 1027110,
+   "sha256": "070351a75314943d31c078d41b49e10488c67d8ee2d5b711b4d4934ffc173143"
+  },
+  {
+   "id": "cloud-pentesting-cloud-azure-pentestesting-guide",
+   "title": "Cloud   Azure Pentestesting Guide",
+   "path": "/pdfs/cloud-pentesting/Cloud - Azure Pentestesting Guide.pdf",
+   "category": "cloud-pentesting",
+   "size": 221028,
+   "sha256": "3239ccee70643f593a3eccd5115ad89b01a0b7be45e6d0baf938c8567fe83e24"
+  },
+  {
+   "id": "cloud-pentesting-cloud-pentesting-cheatsheet",
+   "title": "Cloud Pentesting cheatsheet",
+   "path": "/pdfs/cloud-pentesting/Cloud Pentesting cheatsheet.pdf",
+   "category": "cloud-pentesting",
+   "size": 202969,
+   "sha256": "a5f6eeb4d0f01c5130b46d9f91b4856cb67d6921dbb2c9898536849a1b960013"
+  },
+  {
+   "id": "cloud-pentesting-getting-started-in-pentesting-azure-1622190241",
+   "title": "Getting Started in Pentesting Azure 1622190241",
+   "path": "/pdfs/cloud-pentesting/Getting_Started_in_Pentesting_Azure_1622190241.pdf",
+   "category": "cloud-pentesting",
+   "size": 3917342,
+   "sha256": "07d4f408974f1d0d962379680648b61cdc8195182ad898008a6e4566c925e20b"
+  },
+  {
+   "id": "container-and-kubernetes-assessment-container-security-checklist",
+   "title": "Container Security Checklist",
+   "path": "/pdfs/container-and-kubernetes-assessment/Container Security Checklist.pdf",
+   "category": "container-and-kubernetes-assessment",
+   "size": 412589,
+   "sha256": "60f3be3d12f51cef8df9820b47782616a8f4c74f18b0b8d411bbf445757a74c2"
+  },
+  {
+   "id": "devsecops-devsecops",
+   "title": "DevSecOps",
+   "path": "/pdfs/devsecops/DevSecOps.pdf",
+   "category": "devsecops",
+   "size": 308833,
+   "sha256": "95eca4119917197a090ac4682eef2196290adcb57a85cd5fd1df1ddf7ba25904"
+  },
+  {
+   "id": "devsecops-linux-shell-scripting-for-devops-by-devops-shack",
+   "title": "Linux & Shell Scripting for DevOps by DevOps Shack",
+   "path": "/pdfs/devsecops/Linux & Shell Scripting for DevOps by DevOps Shack.pdf",
+   "category": "devsecops",
+   "size": 5304543,
+   "sha256": "d59566fc7e36234e7b1cd7896e5d00934555573f86d1c6babfc1c7a30096c6d4"
+  },
+  {
+   "id": "devsecops-the-devsecops-security-checklist",
+   "title": "The Devsecops Security Checklist",
+   "path": "/pdfs/devsecops/The Devsecops Security Checklist.pdf",
+   "category": "devsecops",
+   "size": 308833,
+   "sha256": "95eca4119917197a090ac4682eef2196290adcb57a85cd5fd1df1ddf7ba25904"
+  },
+  {
+   "id": "firewall-penetration-nmap-firewall-scan",
+   "title": "Nmap Firewall Scan",
+   "path": "/pdfs/firewall-penetration/Nmap Firewall Scan.pdf",
+   "category": "firewall-penetration",
+   "size": 3247435,
+   "sha256": "c47a0dd63b6cffe31977d046d59abd7d0164affdf3e40c5ad3fa72d979f5e1ff"
+  },
+  {
+   "id": "forensic-windows-forensic",
+   "title": "Windows Forensic",
+   "path": "/pdfs/forensic/Windows Forensic.pdf",
+   "category": "forensic",
+   "size": 18429552,
+   "sha256": "23dc8f31d943694a6bdcddfda86df1f1cafc21952209b522a5f90a7027c47f13"
+  },
+  {
+   "id": "infrastructure-security-guide-on-metasploitable-2-by-hackingarticles-in",
+   "title": "Guide on metasploitable 2 by hackingarticles.in",
+   "path": "/pdfs/infrastructure-security/Guide on metasploitable-2 by hackingarticles.in.pdf",
+   "category": "infrastructure-security",
+   "size": 4040396,
+   "sha256": "3c16b28756060754f78137709db956c5a5997564e1a65fe89adc0038a4e02d7b"
+  },
+  {
+   "id": "infrastructure-security-infrastucture-pt",
+   "title": "Infrastucture PT",
+   "path": "/pdfs/infrastructure-security/Infrastucture PT.pdf",
+   "category": "infrastructure-security",
+   "size": 386467,
+   "sha256": "7e1563d81b16a4e8639f1b366b41558d0b43d9a88ee3fef34990f60ff3299bd9"
+  },
+  {
+   "id": "infrastructure-security-nmap-for-red-teamers",
+   "title": "Nmap for Red Teamers",
+   "path": "/pdfs/infrastructure-security/Nmap for Red Teamers.pdf",
+   "category": "infrastructure-security",
+   "size": 1487016,
+   "sha256": "b3e2c2cb7a84d29bc0656b99d6ac6b318977d36cdfcc5898801f1b9393847b72"
+  },
+  {
+   "id": "mobile-pentesting-elearnsecurity-mobile-application-penetration-testing",
+   "title": "eLearnSecurity Mobile Application Penetration Testing",
+   "path": "/pdfs/mobile-pentesting/eLearnSecurity Mobile Application Penetration Testing.pdf",
+   "category": "mobile-pentesting",
+   "size": 6579686,
+   "sha256": "e7b6b4c528ed6666dd25e00f5ad885327c538e809a8f9eca064ce567cddf38d1"
+  },
+  {
+   "id": "mobile-pentesting-mobile-ios-pentesting-guid-by-yasin-a-irba",
+   "title": "Mobile  & iOS pentesting guid by Yasin A\u011eIRBA\u015e",
+   "path": "/pdfs/mobile-pentesting/Mobile  & iOS pentesting guid by Yasin A\u011eIRBA\u015e.pdf",
+   "category": "mobile-pentesting",
+   "size": 753757,
+   "sha256": "58e12cf555360f052f8e76b9ef4211f7956ca6e63ac6c315f1b2e69ef37489ac"
+  },
+  {
+   "id": "mobile-pentesting-mobile-testing-gudie",
+   "title": "Mobile Testing Gudie",
+   "path": "/pdfs/mobile-pentesting/Mobile Testing Gudie.pdf",
+   "category": "mobile-pentesting",
+   "size": 1527378,
+   "sha256": "76c4e5ab373378a3223d817fba13d547ab4bbfa2ccc30b9672f60afa14436f36"
+  },
+  {
+   "id": "network-pentesting-computer-networking",
+   "title": "Computer Networking",
+   "path": "/pdfs/network-pentesting/Computer Networking.pdf",
+   "category": "network-pentesting",
+   "size": 996691,
+   "sha256": "f7c48022773f27946afe17b347fcfc830c449cda73693e6fe43f1bf6ab7cf40b"
+  },
+  {
+   "id": "network-pentesting-computer-networking-2",
+   "title": "Computer networking (2)",
+   "path": "/pdfs/network-pentesting/Computer networking (2).pdf",
+   "category": "network-pentesting",
+   "size": 9759487,
+   "sha256": "824485be8db15058d8f76a9897793112f9c941c8f5dc2e819a70f23784462931"
+  },
+  {
+   "id": "network-pentesting-computer-networking-basics-concept",
+   "title": "Computer Networking Basics Concept",
+   "path": "/pdfs/network-pentesting/Computer Networking Basics Concept.pdf",
+   "category": "network-pentesting",
+   "size": 996691,
+   "sha256": "f7c48022773f27946afe17b347fcfc830c449cda73693e6fe43f1bf6ab7cf40b"
+  },
+  {
+   "id": "network-pentesting-external-network-penetration-testing",
+   "title": "External Network Penetration Testing",
+   "path": "/pdfs/network-pentesting/External Network Penetration Testing.pdf",
+   "category": "network-pentesting",
+   "size": 307995,
+   "sha256": "6d4c4e19b24850b71af46985ec5ee886893fa642e728bc71054ccafa4fd281bd"
+  },
+  {
+   "id": "network-pentesting-linux-for-networking-professional-1692037154",
+   "title": "Linux For Networking Professional 1692037154",
+   "path": "/pdfs/network-pentesting/Linux_For_Networking_Professional__1692037154.pdf",
+   "category": "network-pentesting",
+   "size": 801191,
+   "sha256": "b1fc3087d08e2013ca37489bd0923c3c900ad6d97ca1b2c5039f5a68076d632a"
+  },
+  {
+   "id": "network-pentesting-master-nmap-in-60-days-one-command-at-a-time",
+   "title": "Master Nmap in 60 Days \u2013 One Command at a Time",
+   "path": "/pdfs/network-pentesting/Master Nmap in 60 Days \u2013 One Command at a Time.pdf",
+   "category": "network-pentesting",
+   "size": 24236651,
+   "sha256": "2abc738901ab5cec34c17a9d8cbf8c236994e9f5a8477181ed5310530da29043"
+  },
+  {
+   "id": "network-pentesting-network-pt-with-wireshark",
+   "title": "Network PT with Wireshark",
+   "path": "/pdfs/network-pentesting/Network PT with Wireshark.pdf",
+   "category": "network-pentesting",
+   "size": 5501471,
+   "sha256": "be62c2ff3da3f495ec4d102180200b986b5a2474b1bc1336de3b26167b0ac99b"
+  },
+  {
+   "id": "network-pentesting-network-security-check-list",
+   "title": "Network Security Check  List",
+   "path": "/pdfs/network-pentesting/Network Security Check  List.pdf",
+   "category": "network-pentesting",
+   "size": 455424,
+   "sha256": "d3708a56f7c495f68a9893d61634a90c29509af7a32cd916fc7d667a90bdcefe"
+  },
+  {
+   "id": "network-pentesting-ntwork-penetration-course",
+   "title": "Ntwork Penetration Course",
+   "path": "/pdfs/network-pentesting/Ntwork-Penetration Course.pdf",
+   "category": "network-pentesting",
+   "size": 1797930,
+   "sha256": "05845317de5f031868b0f1673c68f6290154c829603ca6385fdf6909e144c2db"
+  },
+  {
+   "id": "osint-awesome-osint",
+   "title": "AWESOME OSINT",
+   "path": "/pdfs/osint/AWESOME OSINT.pdf",
+   "category": "osint",
+   "size": 1070004,
+   "sha256": "be6c1fb7e07fa06024d798a31092195789b2de7edb5f573e4ecd83a11a16b878"
+  },
+  {
+   "id": "osint-awesome-osint-open-source-intelligence",
+   "title": "Awesome OSINT(Open Source Intelligence)",
+   "path": "/pdfs/osint/Awesome OSINT(Open-Source Intelligence).pdf",
+   "category": "osint",
+   "size": 1070004,
+   "sha256": "be6c1fb7e07fa06024d798a31092195789b2de7edb5f573e4ecd83a11a16b878"
+  },
+  {
+   "id": "osint-image-osint-pdf",
+   "title": "Image OSINT.pdf",
+   "path": "/pdfs/osint/Image OSINT.pdf.pdf",
+   "category": "osint",
+   "size": 7847097,
+   "sha256": "e94e9fa4ce5016f5fb3cfdb006b9b05fb7e645251b9cc2d91d8c7ec8790dbf98"
+  },
+  {
+   "id": "osint-osint",
+   "title": "Osint",
+   "path": "/pdfs/osint/Osint.pdf",
+   "category": "osint",
+   "size": 501089,
+   "sha256": "8e4206238248c58967a6f4e13e75578ffac21d763ffe08df8c97b921f98d9bb8"
+  },
+  {
+   "id": "osint-recon-like-a-boss",
+   "title": "Recon Like A Boss",
+   "path": "/pdfs/osint/Recon Like A Boss.pdf",
+   "category": "osint",
+   "size": 1416510,
+   "sha256": "5c350cb95afdc195352626bd9ff7db2caf3670c98c6786140908fda87b63b509"
+  },
+  {
+   "id": "osint-social-media-osint",
+   "title": "Social Media OSINT",
+   "path": "/pdfs/osint/Social Media OSINT.pdf",
+   "category": "osint",
+   "size": 92339,
+   "sha256": "09df88741576dafbf00327bd1abb126a3975f03f19bd686c43ca95232505669b"
+  },
+  {
+   "id": "secure-code-review-secure-coding-practices",
+   "title": "Secure Coding Practices",
+   "path": "/pdfs/secure-code-review/Secure Coding Practices.pdf",
+   "category": "secure-code-review",
+   "size": 563157,
+   "sha256": "1632867b380e26852b74e6d8ecba5dd61d8f455930931c218f498fd4f9aebeec"
+  },
+  {
+   "id": "secure-code-review-source-code-review-guide-from-cobalt",
+   "title": "Source Code Review Guide from Cobalt",
+   "path": "/pdfs/secure-code-review/Source Code Review Guide from Cobalt.pdf",
+   "category": "secure-code-review",
+   "size": 3002262,
+   "sha256": "b3cc56f7efedaacd88b58cce7936d466833693807da11503cf7031107642b9d8"
+  },
+  {
+   "id": "secure-code-review-webgoat-developerworkbook-fortify-scan-results",
+   "title": "WebGoat  DeveloperWorkbook Fortify Scan Results",
+   "path": "/pdfs/secure-code-review/WebGoat- DeveloperWorkbook-Fortify Scan Results.pdf",
+   "category": "secure-code-review",
+   "size": 2257555,
+   "sha256": "77b754cd3233aba5594f4f67edc1eb2108c23d24d45a4284d7bdc4323d030c8f"
+  },
+  {
+   "id": "thick-client-pentesting-thick-client-pentesting-checklist",
+   "title": "Thick Client Pentesting Checklist",
+   "path": "/pdfs/thick-client-pentesting/Thick Client Pentesting Checklist.pdf",
+   "category": "thick-client-pentesting",
+   "size": 82568,
+   "sha256": "f0b03d2cc1fac21a6a56c1efbb5ac0654a044de6beae442314326e2d542525a7"
+  },
+  {
+   "id": "threat-modeling-threat-model",
+   "title": "Threat Model",
+   "path": "/pdfs/threat-modeling/Threat Model.pdf",
+   "category": "threat-modeling",
+   "size": 330566,
+   "sha256": "8a3bdaf3aa87fdabb869406da7eddc4af26ecb81e0e1e0579be20f60a2d4be8b"
+  },
+  {
+   "id": "web-application-pentesting-2023-book-for-web-pentesting",
+   "title": "2023 Book For Web Pentesting",
+   "path": "/pdfs/web-application-pentesting/2023 Book For Web Pentesting.pdf",
+   "category": "web-application-pentesting",
+   "size": 16849738,
+   "sha256": "7f1dc1f70330c05a8a13b46e33f3815868bd4b5d443c493b57e3bc0814ad44c6"
+  },
+  {
+   "id": "web-application-pentesting-about-no-rate-limit-vulnerability",
+   "title": "About No Rate limit vulnerability",
+   "path": "/pdfs/web-application-pentesting/About No Rate limit vulnerability.pdf",
+   "category": "web-application-pentesting",
+   "size": 95222,
+   "sha256": "6635574d44d1130ae94e14a3ff4a6a919409d12427bfe8b4c468b4071c0129c5"
+  },
+  {
+   "id": "web-application-pentesting-about-sql-injection",
+   "title": "About SQL injection",
+   "path": "/pdfs/web-application-pentesting/About SQL injection.pdf",
+   "category": "web-application-pentesting",
+   "size": 169602,
+   "sha256": "31e16d60fc27d14f5fc0e757499de1daae8abeaf15a85931a22f5f664d5b8f70"
+  },
+  {
+   "id": "web-application-pentesting-about-wordpress-vulnerabilities",
+   "title": "About WordPress Vulnerabilities",
+   "path": "/pdfs/web-application-pentesting/About WordPress Vulnerabilities.pdf",
+   "category": "web-application-pentesting",
+   "size": 131364,
+   "sha256": "b156f583f62ea810773d47bfad8f2797b8441ba3b9ef614f3a7fbd495c3131cc"
+  },
+  {
+   "id": "web-application-pentesting-about-xss",
+   "title": "About XSS",
+   "path": "/pdfs/web-application-pentesting/About XSS.pdf",
+   "category": "web-application-pentesting",
+   "size": 78010,
+   "sha256": "b9242b1f96753f589fb19faac29cc2720d675dd2f242f27b9d56495f690e5def"
+  },
+  {
+   "id": "web-application-pentesting-business-logic-bugs",
+   "title": "Business Logic Bugs",
+   "path": "/pdfs/web-application-pentesting/Business Logic Bugs.pdf",
+   "category": "web-application-pentesting",
+   "size": 124768,
+   "sha256": "57538390a3de64853df39572eff006f258147d42e527470dca48f561022808c3"
+  },
+  {
+   "id": "web-application-pentesting-business-logic-bugs-1",
+   "title": "Business Logic bugs 1",
+   "path": "/pdfs/web-application-pentesting/Business Logic bugs-1.pdf",
+   "category": "web-application-pentesting",
+   "size": 98026,
+   "sha256": "c34b50f98bd7d1ee935d12864564ebac44f7bfc885edd5aef27bc11fa346f7a4"
+  },
+  {
+   "id": "web-application-pentesting-checklist-for-testing-of-web-application",
+   "title": "Checklist for Testing of  Web Application",
+   "path": "/pdfs/web-application-pentesting/Checklist for Testing of  Web Application.pdf",
+   "category": "web-application-pentesting",
+   "size": 117298,
+   "sha256": "b07b9646516d5e5df62c576e3c9880a958f91980615a0cc3933119750f330e7c"
+  },
+  {
+   "id": "web-application-pentesting-cookies",
+   "title": "Cookies",
+   "path": "/pdfs/web-application-pentesting/Cookies.pdf",
+   "category": "web-application-pentesting",
+   "size": 3740332,
+   "sha256": "02df2b3ed607922e6b067c4ca68a097a3df66940c780a2f955bebccb8cad61e1"
+  },
+  {
+   "id": "web-application-pentesting-cookies-concept",
+   "title": "cookies concept",
+   "path": "/pdfs/web-application-pentesting/cookies concept.pdf",
+   "category": "web-application-pentesting",
+   "size": 1198571,
+   "sha256": "37ff5e579d1ee2f7be2d0680e196abb7789310c2af436c10ab9b11d237dabf84"
+  },
+  {
+   "id": "web-application-pentesting-cross-origin-resource-sharing-cors",
+   "title": "CROSS ORIGIN RESOURCE SHARING (CORS)",
+   "path": "/pdfs/web-application-pentesting/CROSS-ORIGIN RESOURCE SHARING (CORS).pdf",
+   "category": "web-application-pentesting",
+   "size": 728775,
+   "sha256": "b61927e9b304e7f7eb884a10f4aba7a5de6e580ee429040245856dcd36820344"
+  },
+  {
+   "id": "web-application-pentesting-detailed-guide-on-open-redirect",
+   "title": "Detailed Guide on Open Redirect",
+   "path": "/pdfs/web-application-pentesting/Detailed Guide on Open Redirect.pdf",
+   "category": "web-application-pentesting",
+   "size": 2700675,
+   "sha256": "ea9f55c07b0977501c2b95ddd30c31c1da3cda0d6f5a0d6f7e74b71b5f7b24a6"
+  },
+  {
+   "id": "web-application-pentesting-detailed-guide-on-unrestricted-file-upload",
+   "title": "Detailed Guide on Unrestricted File Upload",
+   "path": "/pdfs/web-application-pentesting/Detailed Guide on Unrestricted File Upload.pdf",
+   "category": "web-application-pentesting",
+   "size": 2815491,
+   "sha256": "1fe4fe8d7e633a805bda21a9c9481279f0d25d7036c6b4f03cb3756f15bec2da"
+  },
+  {
+   "id": "web-application-pentesting-detailed-guide-on-xxe-injection",
+   "title": "Detailed Guide on XXE Injection",
+   "path": "/pdfs/web-application-pentesting/Detailed Guide on XXE Injection.pdf",
+   "category": "web-application-pentesting",
+   "size": 3524495,
+   "sha256": "d270a4e933a2fc7c7893e65bb88ae9da23a356801c081d6df189644dbb53bdc5"
+  },
+  {
+   "id": "web-application-pentesting-file-inclusion-vulnerabilities",
+   "title": "File Inclusion Vulnerabilities",
+   "path": "/pdfs/web-application-pentesting/File Inclusion Vulnerabilities.pdf",
+   "category": "web-application-pentesting",
+   "size": 271423,
+   "sha256": "56313ee3fcc0e9caadf8653b8d78e1db393e174a7e32058914d50c25c75301e1"
+  },
+  {
+   "id": "web-application-pentesting-html-injection",
+   "title": "HTML INJECTION",
+   "path": "/pdfs/web-application-pentesting/HTML_INJECTION.pdf",
+   "category": "web-application-pentesting",
+   "size": 338746,
+   "sha256": "6aeb3fe047425430381e71339365d96e4cc7bf668b5d7640ef997a0eb85b34ab"
+  },
+  {
+   "id": "web-application-pentesting-insecure-direct-object-references-idor",
+   "title": "Insecure Direct Object References (IDOR)",
+   "path": "/pdfs/web-application-pentesting/Insecure Direct Object References (IDOR).pdf",
+   "category": "web-application-pentesting",
+   "size": 1259978,
+   "sha256": "304981a33c4ed2a5c70bc2b2ffc49efc4fcda23d79991ec2833d475d3bf99f3f"
+  },
+  {
+   "id": "web-application-pentesting-quick-revision-of-mysql",
+   "title": "Quick Revision of MySQL",
+   "path": "/pdfs/web-application-pentesting/Quick Revision of MySQL.pdf",
+   "category": "web-application-pentesting",
+   "size": 299701,
+   "sha256": "320369e1c0b67938dfd3c0a4c0e67354e3af82ecd2f1d28154150ac1bdc87aa0"
+  },
+  {
+   "id": "web-application-pentesting-reverse-shell",
+   "title": "Reverse Shell",
+   "path": "/pdfs/web-application-pentesting/Reverse Shell.pdf",
+   "category": "web-application-pentesting",
+   "size": 172877,
+   "sha256": "86f27c5148fb031b66cbb99317d17a3dc1303d27f7b34b69aab6bf672090a615"
+  },
+  {
+   "id": "web-application-pentesting-session-task-7",
+   "title": "Session Task 7",
+   "path": "/pdfs/web-application-pentesting/Session_Task_7.pdf",
+   "category": "web-application-pentesting",
+   "size": 2059078,
+   "sha256": "999ddecff42f6c43d3b076a783281e11b91226249958f99d1c5d512c9027eb0d"
+  },
+  {
+   "id": "web-application-pentesting-sql-injection",
+   "title": "SQL Injection",
+   "path": "/pdfs/web-application-pentesting/SQL Injection.pdf",
+   "category": "web-application-pentesting",
+   "size": 735105,
+   "sha256": "e9c7b7d974e5fb827ea11f3257cdfcf45e294a4e3db88faed30df2a54ae30363"
+  },
+  {
+   "id": "web-application-pentesting-sql-injection",
+   "title": "SQL INJECTION",
+   "path": "/pdfs/web-application-pentesting/SQL_INJECTION.pdf",
+   "category": "web-application-pentesting",
+   "size": 1693946,
+   "sha256": "d01d30a2d0fd05b9f7aee17e1e67fc70bd571f105b87fad50b46f955fac538de"
+  },
+  {
+   "id": "web-application-pentesting-ssrf",
+   "title": "SSRF",
+   "path": "/pdfs/web-application-pentesting/SSRF.pdf",
+   "category": "web-application-pentesting",
+   "size": 131789,
+   "sha256": "190e968d8cfe7ab890044fe994272fe13d161f7463171add74924c502606987f"
+  },
+  {
+   "id": "web-application-pentesting-ssrf-by-nikitha-yasala",
+   "title": "SSRF by Nikitha Yasala",
+   "path": "/pdfs/web-application-pentesting/SSRF by Nikitha Yasala.pdf",
+   "category": "web-application-pentesting",
+   "size": 341807,
+   "sha256": "e0457d4f1ef9b0993d78ecbf0e99e29a997982db233d5c5210e736e1cf893fff"
+  },
+  {
+   "id": "web-application-pentesting-subdomain-takeover",
+   "title": "subdomain takeover",
+   "path": "/pdfs/web-application-pentesting/subdomain takeover.pdf",
+   "category": "web-application-pentesting",
+   "size": 212089,
+   "sha256": "42f9046cb81d37a94d4bfe286629513327c50f17f43371aad07f6f7e1e0ad3f4"
+  },
+  {
+   "id": "web-application-pentesting-subdomain-takeover",
+   "title": "subdomain takeover",
+   "path": "/pdfs/web-application-pentesting/subdomain_takeover.pdf",
+   "category": "web-application-pentesting",
+   "size": 277704,
+   "sha256": "6740abc42c5010fda5cb4007c3ac6fd4b1b1cf080f0e1a4290ead0ba75172f47"
+  },
+  {
+   "id": "web-application-pentesting-subdomain-takeover-1",
+   "title": "Subdomain Takeover 1",
+   "path": "/pdfs/web-application-pentesting/Subdomain Takeover-1.pdf",
+   "category": "web-application-pentesting",
+   "size": 195810,
+   "sha256": "e3bef1d4c9410fc3bce71243214ed73ffba8467685643685cbcc6c2a6ef48e59"
+  },
+  {
+   "id": "web-application-pentesting-test-cases-as-per-funtionalities",
+   "title": "Test Cases As per Funtionalities",
+   "path": "/pdfs/web-application-pentesting/Test Cases As per Funtionalities.pdf",
+   "category": "web-application-pentesting",
+   "size": 716916,
+   "sha256": "7889a4b19cf2885c9b25876005fb192b8f51767d14275ab50ca50107e47c0df3"
+  },
+  {
+   "id": "web-application-pentesting-top-100-vulnerabilities-step-by-step-guide-handbook",
+   "title": "TOP 100 Vulnerabilities Step by Step Guide Handbook",
+   "path": "/pdfs/web-application-pentesting/TOP 100 Vulnerabilities Step-by-Step Guide Handbook.pdf",
+   "category": "web-application-pentesting",
+   "size": 292733,
+   "sha256": "66f477619beeb3009064976400cad650bfb38f8773bb4a5d8702c78dd33b8058"
+  },
+  {
+   "id": "web-application-pentesting-type-of-cookies",
+   "title": "Type of cookies",
+   "path": "/pdfs/web-application-pentesting/Type of cookies.pdf",
+   "category": "web-application-pentesting",
+   "size": 1198571,
+   "sha256": "37ff5e579d1ee2f7be2d0680e196abb7789310c2af436c10ab9b11d237dabf84"
+  },
+  {
+   "id": "web-application-pentesting-web-application-advanced-hacking",
+   "title": "Web Application Advanced Hacking",
+   "path": "/pdfs/web-application-pentesting/Web Application Advanced Hacking.pdf",
+   "category": "web-application-pentesting",
+   "size": 3016283,
+   "sha256": "c11004c111865a3327fcab6ec1b924163a4a5bf65f53872b32f6806105858b74"
+  },
+  {
+   "id": "web-application-pentesting-web-application-exploit-check-list",
+   "title": "Web Application Exploit Check List",
+   "path": "/pdfs/web-application-pentesting/Web Application Exploit Check List .pdf",
+   "category": "web-application-pentesting",
+   "size": 45161,
+   "sha256": "36e310bb7a60ece18cbf18702990d2128aef2da61c23841690feec27d22ef581"
+  },
+  {
+   "id": "web-application-pentesting-web-application-penetration-testing",
+   "title": "web application penetration testing",
+   "path": "/pdfs/web-application-pentesting/web application penetration testing.pdf",
+   "category": "web-application-pentesting",
+   "size": 13770019,
+   "sha256": "5f258ff9e75dba499306df2a06fa89e9eebcc2fd3b3ee0b82a6a2a06f26b66fd"
+  },
+  {
+   "id": "web-application-pentesting-web-application-penetration-testing-2",
+   "title": "web application penetration testing (2)",
+   "path": "/pdfs/web-application-pentesting/web application penetration testing (2).pdf",
+   "category": "web-application-pentesting",
+   "size": 13770019,
+   "sha256": "5f258ff9e75dba499306df2a06fa89e9eebcc2fd3b3ee0b82a6a2a06f26b66fd"
+  },
+  {
+   "id": "web-application-pentesting-web-application-penetration-testing-complete-guide",
+   "title": "Web Application Penetration Testing Complete Guide.",
+   "path": "/pdfs/web-application-pentesting/Web Application Penetration Testing Complete Guide. .pdf",
+   "category": "web-application-pentesting",
+   "size": 135091,
+   "sha256": "ecc7530fd293d011cfcec22174e853a03c48fdd384d463a4c3098c1aceb38c67"
+  },
+  {
+   "id": "web-application-pentesting-web-application-penetration-testing-guide",
+   "title": "Web Application Penetration Testing Guide",
+   "path": "/pdfs/web-application-pentesting/Web Application Penetration Testing Guide.pdf",
+   "category": "web-application-pentesting",
+   "size": 16861653,
+   "sha256": "20c9bb9df4ffc6379b395cdc11fe4400f22cbc6e73fd5bedee201569e8a79f2b"
+  },
+  {
+   "id": "web-application-pentesting-web-application-pentest-methodology",
+   "title": "Web Application Pentest Methodology",
+   "path": "/pdfs/web-application-pentesting/Web Application Pentest Methodology.pdf",
+   "category": "web-application-pentesting",
+   "size": 1176410,
+   "sha256": "d0e05c3136b523767b1dd9af83963bf175e5be1a669f60655a91848c801379e6"
+  },
+  {
+   "id": "web-application-pentesting-wordpress",
+   "title": "WordPress",
+   "path": "/pdfs/web-application-pentesting/WordPress.pdf",
+   "category": "web-application-pentesting",
+   "size": 487096,
+   "sha256": "84e3a01586c81f89a83fa8e3375d901bdc08fee9f182be508fe4eab97c320938"
+  },
+  {
+   "id": "web-application-pentesting-wordpress-1",
+   "title": "WordPress 1",
+   "path": "/pdfs/web-application-pentesting/WordPress-1.pdf",
+   "category": "web-application-pentesting",
+   "size": 487096,
+   "sha256": "84e3a01586c81f89a83fa8e3375d901bdc08fee9f182be508fe4eab97c320938"
+  },
+  {
+   "id": "web-application-pentesting-xss",
+   "title": "XSS",
+   "path": "/pdfs/web-application-pentesting/XSS.pdf",
+   "category": "web-application-pentesting",
+   "size": 388494,
+   "sha256": "105fa32ff9a2bc833ec6f275471f274d00064096fbb16ddff919914bfb9eac4f"
+  },
+  {
+   "id": "web-application-pentesting-xss-bypass",
+   "title": "XSS Bypass",
+   "path": "/pdfs/web-application-pentesting/XSS Bypass.pdf",
+   "category": "web-application-pentesting",
+   "size": 143690,
+   "sha256": "affa5ae3139a9f09e986f6dee59494e146717dfc6584c6530ab0a1ee34a6e74b"
+  },
+  {
+   "id": "web-application-pentesting-xxe",
+   "title": "XXE",
+   "path": "/pdfs/web-application-pentesting/XXE.pdf",
+   "category": "web-application-pentesting",
+   "size": 119354,
+   "sha256": "2fe1d40fec8f8d9b09599cab2d4843ad95c8b2a5a7b2174b6284ea9366ef46f9"
+  },
+  {
+   "id": "web-application-pentesting-xxe-injection-attack",
+   "title": "XXE Injection Attack",
+   "path": "/pdfs/web-application-pentesting/XXE Injection Attack.pdf",
+   "category": "web-application-pentesting",
+   "size": 221570,
+   "sha256": "efcba18c8db5ac14640f487883afc786ccf649d208d9a2a07c98437c942551a7"
+  },
+  {
+   "id": "wi-fi-pentesting-wifi-hacking",
+   "title": "Wifi Hacking",
+   "path": "/pdfs/wi-fi-pentesting/Wifi Hacking.pdf",
+   "category": "wi-fi-pentesting",
+   "size": 721859,
+   "sha256": "0243580610593156dae9fae21a72f9f58add77d10c80f33e336642c41735e730"
+  },
+  {
+   "id": "wi-fi-pentesting-wireless-pentesting",
+   "title": "Wireless Pentesting",
+   "path": "/pdfs/wi-fi-pentesting/Wireless Pentesting.pdf",
+   "category": "wi-fi-pentesting",
+   "size": 85446,
+   "sha256": "503729241f0e251b4ef8c6279516ed77c3e68a81e89619665083032d9c76f12d"
+  }
+ ]
+}
