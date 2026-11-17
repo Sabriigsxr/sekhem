@@ -36,7 +36,10 @@ jobs:
         run: npm ci
 
       - name: Build site (runs migration via prebuild)
-        # SEKHEM — build uses env-overridable SITE_URL / BASE_URL in docusaurus.config.ts.
+        # Project page at sabriigsxr.github.io/sekhem/ — baseUrl must match.
+        env:
+          SITE_URL: https://sabriigsxr.github.io
+          BASE_URL: /sekhem/
         run: npm run build
 
       - name: Upload Pages artifact
