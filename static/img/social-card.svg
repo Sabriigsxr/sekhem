@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="torch" cx="50%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#c9a227" stop-opacity="0.32"/>
+      <stop offset="0.55" stop-color="#c9a227" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#0b0908" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ground" cx="50%" cy="100%" r="90%">
+      <stop offset="0" stop-color="#1fb6a6" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#0b0908" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0b0908"/>
+  <rect width="1200" height="630" fill="url(#torch)"/>
+  <rect width="1200" height="630" fill="url(#ground)"/>
+
+  <!-- pyramid silhouettes -->
+  <g stroke="#e8c766" stroke-opacity="0.9" fill="none" stroke-width="3">
+    <path d="M150 470 L350 230 L550 470 Z"/>
+    <path d="M430 470 L620 270 L810 470 Z" stroke-opacity="0.65"/>
+    <path d="M730 470 L880 315 L1030 470 Z" stroke-opacity="0.4"/>
+  </g>
+  <line x1="80" y1="470" x2="1120" y2="470" stroke="#c9a227" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- cartouche eye -->
+  <g transform="translate(600 235)" stroke="#e8c766" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="0" cy="0" rx="150" ry="95" stroke-opacity="0.35" stroke-width="3" stroke-dasharray="2 14"/>
+    <path d="M-108 0 Q0 -78 108 0 Q0 78 -108 0 Z"/>
+    <circle cx="0" cy="0" r="38"/>
+    <path d="M-96 -38 Q0 -108 96 -38" stroke-width="6"/>
+    <path d="M0 44 L0 92"/>
+    <path d="M40 44 q46 4 56 48"/>
+  </g>
+
+  <text x="600" y="470" text-anchor="middle" font-family="Cinzel Decorative, Cinzel, serif" font-weight="900" font-size="86" fill="#e8c766" letter-spacing="18">SEKHEM</text>
+  <text x="600" y="522" text-anchor="middle" font-family="Spectral, serif" font-size="24" fill="#a89f8a">The Pharaoh&#8217;s Pentest Codex</text>
+  <text x="600" y="586" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" fill="#1fb6a6">github.com/sabriigsxr</text>
+</svg>
