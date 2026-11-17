@@ -1,0 +1,49 @@
+.page {
+  padding: 3rem 0 5rem;
+  background: var(--pe-stone);
+}
+.head { text-align: center; max-width: 46rem; margin: 0 auto 2.5rem; }
+.back {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: var(--ifm-font-family-monospace); font-size: 0.8rem;
+  color: var(--pe-muted); text-decoration: none;
+}
+.back:hover { color: var(--pe-gold-bright); }
+.title {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 900;
+  margin: 0 0 0.75rem;
+  background: linear-gradient(180deg, #f5e6b8, #e8c766 45%, #c9a227 75%, #8a6413);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.sub { color: var(--ifm-font-color-base); opacity: 0.92; margin: 0 auto 1rem; }
+.credit {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  font-family: var(--ifm-font-family-monospace); font-size: 0.76rem;
+  color: var(--pe-scarab); border: 1px solid color-mix(in srgb, var(--pe-scarab) 40%, transparent);
+  background: color-mix(in srgb, var(--pe-scarab) 8%, transparent);
+  border-radius: 999px; padding: 0.35rem 1rem;
+}
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; max-width: 78rem; margin: 0 auto; }
+@media (max-width: 1100px) { .grid { grid-template-columns: 1fr; max-width: 44rem; } }
+.card {
+  border: 1px solid var(--pe-border); border-radius: 4px 4px 16px 16px;
+  overflow: hidden; background: var(--pe-card-bg); height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.25s ease, border-color 0.2s ease;
+  display: flex; flex-direction: column;
+}
+.card:hover { transform: translateY(-4px); border-color: var(--pe-gold); box-shadow: 0 18px 44px rgba(0,0,0,0.5), 0 0 30px rgba(201,162,39,0.12); }
+.frame { position: relative; border-bottom: 1px solid var(--pe-border); aspect-ratio: 16 / 9; overflow: hidden; }
+.frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tag {
+  position: absolute; top: 0.6rem; right: 0.6rem;
+  font-family: var(--ifm-font-family-monospace); font-size: 0.62rem; letter-spacing: 0.2em;
+  color: #1a1408; background: var(--pe-gold); border-radius: 4px; padding: 0.2rem 0.5rem;
+}
+.body { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; gap: 0.45rem; flex: 1; }
+.cardTitle { font-family: 'Cinzel', serif; font-size: 1.1rem; margin: 0; }
+.cardDesc { color: var(--pe-muted); font-size: 0.88rem; margin: 0; line-height: 1.55; }
+.footer { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding-top: 0.6rem; }
+.meta { font-family: var(--ifm-font-family-monospace); font-size: 0.68rem; color: var(--pe-muted); }
+.footNote { text-align: center; color: var(--pe-muted); font-size: 0.85rem; margin-top: 2.5rem; }
+.footNote a { color: var(--pe-gold-bright); }

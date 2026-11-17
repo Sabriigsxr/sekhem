@@ -52,7 +52,7 @@ function Hero(): React.JSX.Element {
           <h1 className={`${styles.title} pe-rise pe-rise--d1`}>SEKHEM</h1>
           <p className={`${styles.tagline} pe-rise pe-rise--d2`}>Every door has a name. This is the codex.</p>
           <p className={`${styles.subtitle} pe-rise pe-rise--d2`}>
-            Methodology, references and field proof across 23 domains of offensive
+            Methodology, references and field proof across 24 domains of offensive
             security — web, API, cloud, mobile, network, Active Directory and more.
             One static, offline-capable codex. No logins. No telemetry. No mercy for blind spots.
           </p>
@@ -70,6 +70,11 @@ function Hero(): React.JSX.Element {
             <div className={styles.stat}><div className={styles.statNum}>{stats.categories}</div><div className={styles.statLabel}>Domains</div></div>
             <div className={styles.stat}><div className={styles.statNum}>{stats.topics}+</div><div className={styles.statLabel}>Topics</div></div>
           </div>
+          <p className={styles.creditLine}>
+            Redesigned &amp; maintained by <a href="https://github.com/sabriigsxr" target="_blank" rel="noopener noreferrer">Dev Ahmed Sabry</a>
+            {' · '}<a href="https://wa.me/201284123811" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            {' · '}<a href="https://www.instagram.com/ahmedsabriigsxr1000" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </p>
         </div>
       </div>
     </header>
@@ -78,7 +83,7 @@ function Hero(): React.JSX.Element {
 
 function Relics(): React.JSX.Element {
   const relics = [
-    {icon: <ScrollText size={24} />, status: 'LIVE', live: true, title: 'The Codex', desc: 'The vault of knowledge you are inside — methodology & playbooks across 23 domains, fully searchable offline.', cta: 'Open The Codex', to: '/overview'},
+    {icon: <ScrollText size={24} />, status: 'LIVE', live: true, title: 'The Codex', desc: 'The vault of knowledge you are inside — methodology & playbooks across 24 domains, fully searchable offline.', cta: 'Open The Codex', to: '/overview'},
     {icon: <Vault size={24} />, status: 'IN FORGING', live: false, title: 'The Tomb', desc: 'The Vault — curated important files & PDFs, checksummed and sealed. Cracking the seal soon.', cta: 'Sealed for now', to: undefined as string | undefined},
     {icon: <ListChecks size={24} />, status: 'IN FORGING', live: false, title: 'The Scarab', desc: 'The Checklist — tick-as-you-go assessments across every platform with progress, notes and export. Soon.', cta: 'Sealed for now', to: undefined as string | undefined},
   ];
@@ -266,13 +271,26 @@ export default function Home(): React.JSX.Element {
         <meta property="og:title" content="SEKHEM — The Pharaoh’s Pentest Codex" />
         <meta
           property="og:description"
-          content="An open-source pentesting knowledge base spanning 23 domains: web, API, cloud, mobile, network, Active Directory, OSINT and more."
+          content="An open-source pentesting knowledge base spanning 24 domains: web, API, cloud, mobile, network, Active Directory, OSINT and more."
         />
         <meta name="twitter:title" content="SEKHEM — The Pharaoh’s Pentest Codex" />
         <meta
           name="twitter:description"
-          content="Every door has a name. Open-source pentesting codex across 23 domains."
+          content="Every door has a name. Open-source pentesting codex across 24 domains."
         />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Dev Ahmed Sabry',
+            url: 'https://sabriigsxr.github.io/sekhem/',
+            sameAs: [
+              'https://github.com/sabriigsxr',
+              'https://www.instagram.com/ahmedsabriigsxr1000',
+              'https://wa.me/201284123811',
+            ],
+          })}
+        </script>
       </Head>
       <Hero />
       <main>

@@ -4,6 +4,12 @@
 >
 > SEKHEM is a redesign (identity, theme, presentation) of **[PentestingEverything](https://github.com/m14r41/PentestingEverything)** by **Madhurendra Kumar ([m14r41](https://github.com/m14r41))**, released under the MIT License. The original `LICENSE` and `NOTICE.md` are retained unchanged — full credit for the underlying knowledge base belongs to the original author and its contributors. This fork is published under the same MIT terms.
 
+## Maintainer
+
+**Dev Ahmed Sabry** — [github.com/sabriigsxr](https://github.com/sabriigsxr) · [@ahmedsabriigsxr1000](https://www.instagram.com/ahmedsabriigsxr1000) (Instagram) · [WhatsApp +20 128 412 3811](https://wa.me/201284123811)
+
+SEKHEM is a redesign of [PentestingEverything](https://github.com/m14r41/PentestingEverything) by m14r41 (MIT © 2023).
+
 ## Live site
 
 Configured via `SITE_URL` (default `https://sekhem.pages.dev`). Set your own domain with the `SITE_URL` env var or in `docusaurus.config.ts`.

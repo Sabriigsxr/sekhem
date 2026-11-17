@@ -104,7 +104,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/social-card.svg',
+    image: 'img/social-card.png',
     metadata: [
       {name: 'keywords', content: 'sekhem, pentesting, penetration testing, cybersecurity, offensive security, web security, cloud security, mobile security, OSINT, red team, bug bounty'},
       {name: 'twitter:card', content: 'summary_large_image'},
@@ -137,6 +137,14 @@ const config: Config = {
         {to: '/learning-paths', label: 'Learning Paths', position: 'left'},
         {to: '/contributing', label: 'Contribute', position: 'left'},
         {
+          type: 'custom-horusEye',
+          position: 'right',
+        },
+        {
+          type: 'custom-sfxToggle',
+          position: 'right',
+        },
+        {
           className: 'header-github-link',
           href: GITHUB_URL,
           position: 'right',
@@ -150,9 +158,10 @@ const config: Config = {
         {
           title: 'The Codex',
           items: [
-            {label: 'Start Pentesting', to: '/'},
+            {label: 'The Codex', to: '/'},
             {label: 'Learning Paths', to: '/learning-paths'},
             {label: 'References Library', to: '/references'},
+            {label: 'Wallpapers', to: '/wallpapers'},
           ],
         },
         {

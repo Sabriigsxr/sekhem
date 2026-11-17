@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {ArrowUp} from 'lucide-react';
+import {sfx} from '@site/src/components/sfx';
 
 /**
  * Wraps the whole app (non-ejecting swizzle). Adds two global reading aids:
@@ -22,6 +23,8 @@ export default function Root({children}: {children: React.ReactNode}): React.JSX
         const pct = max > 0 ? (el.scrollTop / max) * 100 : 0;
         setProgress(pct);
         setShowTop(el.scrollTop > 600);
+        el.style.setProperty('--pe-read-progress', String(pct / 100));
+        el.classList.toggle('is-scrolled', el.scrollTop > 10);
         // Keep the active item visible inside the sticky right-hand TOC: Docusaurus
         // highlights it but does not scroll the TOC, so on long pages the highlight
         // drifts out of view. Nudge only the TOC's own scroll, never the page.
@@ -42,10 +45,26 @@ export default function Root({children}: {children: React.ReactNode}): React.JSX
         }
       });
     };
+    // Synthesized UI sounds (opt-in via navbar speaker; no-ops while muted)
+    const onKeyDown = (e: KeyboardEvent): void => {
+      if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
+        sfx.whoosh(true, 0.55);
+      }
+    };
+    const onPointerDown = (e: PointerEvent): void => {
+      const target = e.target as HTMLElement | null;
+      if (target?.closest?.('input[type="checkbox"]')) sfx.tick(0.5);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    window.addEventListener('pointerdown', onPointerDown, {passive: true});
     window.addEventListener('scroll', onScroll, {passive: true});
     onScroll();
     return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      window.removeEventListener('pointerdown', onPointerDown);
       window.removeEventListener('scroll', onScroll);
+      document.documentElement.style.removeProperty('--pe-read-progress');
+      document.documentElement.classList.remove('is-scrolled');
       if (frame) cancelAnimationFrame(frame);
     };
   }, []);

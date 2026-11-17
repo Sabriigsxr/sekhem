@@ -9,7 +9,104 @@
  * redesigned by Dev Ahmed Sabry.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700&family=Spectral:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Amiri:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/cinzel-decorative-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/fonts/cinzel-decorative-900.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/cinzel-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/cinzel-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/cinzel-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/spectral-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/spectral-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/spectral-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/spectral-italic-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/spectral-italic-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/spectral-italic-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono-600.woff2') format('woff2');
+}
 
 :root {
   --ifm-font-family-base: 'Spectral', Georgia, 'Times New Roman', serif;
@@ -76,6 +173,17 @@
   --search-local-muted-color: var(--pe-muted);
   --search-local-input-active-border-color: var(--ifm-color-primary);
   --search-local-icon-stroke-width: 1.7;
+
+  --pe-ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --pe-ease-torch: cubic-bezier(0.22, 1, 0.36, 1);
+  --pe-ease-spring: cubic-bezier(0.34, 1.35, 0.64, 1);
+  --pe-ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --pe-ease-exit: cubic-bezier(0.4, 0, 1, 1);
+  --pe-ease-decel: cubic-bezier(0, 0, 0.2, 1);
+  --pe-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --pe-dur-micro: 120ms;
+  --pe-dur-ui: 200ms;
+  --pe-dur-ui-hi: 240ms;
 }
 
 [data-theme='dark'] {
@@ -474,3 +582,129 @@ a.pe-card { color: inherit; text-decoration: none; }
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ===== SEKHEM v3.1 — premium motion & chrome upgrade ===== */
+
+/* ----- Navbar: translucent cartouche bar ----- */
+@media (min-width: 997px) {
+  .navbar {
+    background: linear-gradient(180deg, rgba(20, 16, 13, 0.88), rgba(11, 9, 8, 0.72)) !important;
+    backdrop-filter: saturate(150%) blur(16px);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.14);
+    transition: border-color 0.35s var(--pe-ease), box-shadow 0.35s var(--pe-ease), background 0.35s var(--pe-ease);
+  }
+}
+html.is-scrolled .navbar {
+  border-bottom-color: rgba(201, 162, 39, 0.55);
+  background: linear-gradient(180deg, rgba(16, 13, 10, 0.94), rgba(11, 9, 8, 0.82)) !important;
+  box-shadow:
+    0 1px 0 rgba(232, 199, 102, 0.38),
+    0 6px 28px -6px rgba(201, 162, 39, 0.30),
+    0 18px 60px -18px rgba(201, 162, 39, 0.22),
+    inset 0 -1px 0 rgba(232, 199, 102, 0.30);
+}
+.navbar::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px;
+  background: linear-gradient(90deg, transparent 0%, transparent 30%, rgba(255, 240, 190, 0.95) 50%, transparent 70%, transparent 100%);
+  background-size: 220% 100%;
+  background-position: 130% 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+html.is-scrolled .navbar::after { opacity: 0.9; animation: peHairline 5.5s linear infinite; }
+@keyframes peHairline { from { background-position: 130% 0; } to { background-position: -130% 0; } }
+.navbar__brand {
+  border: 1px solid rgba(201, 162, 39, 0.38);
+  border-radius: 999px;
+  padding: 0.28rem 1rem 0.28rem 0.34rem;
+  margin-right: 0.35rem;
+  background: linear-gradient(180deg, rgba(201, 162, 39, 0.14), rgba(201, 162, 39, 0.03) 55%, rgba(201, 162, 39, 0.09));
+  box-shadow: inset 0 1px 0 rgba(232, 199, 102, 0.30), 0 0 16px -6px rgba(201, 162, 39, 0.45);
+  transition: border-color 0.2s var(--pe-ease), box-shadow 0.2s var(--pe-ease);
+}
+.navbar__brand:hover { border-color: rgba(232, 199, 102, 0.62); box-shadow: inset 0 1px 0 rgba(232, 199, 102, 0.4), 0 0 22px -4px rgba(201, 162, 39, 0.5); }
+.navbar__link--active, .navbar__link:hover { text-shadow: 0 0 14px rgba(232, 199, 102, 0.4); }
+.navbar__link--active { box-shadow: inset 0 -2px 0 rgba(232, 199, 102, 0.7); }
+
+/* ----- Cards v3.1: cursor torch + engraved corners ----- */
+.pe-card {
+  --mx: 50%; --my: -20%;
+  position: relative; isolation: isolate; overflow: hidden;
+  background: linear-gradient(165deg, rgba(232, 199, 102, 0.05), transparent 34%), var(--pe-card-bg);
+  transition: transform 0.3s var(--pe-ease), box-shadow 0.3s var(--pe-ease), border-color 0.3s var(--pe-ease);
+}
+.pe-card::before {
+  content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: inherit; pointer-events: none;
+  background: radial-gradient(220px circle at var(--mx) var(--my), rgba(232, 199, 102, 0.17) 0%, rgba(201, 162, 39, 0.08) 38%, transparent 68%);
+  opacity: 0; transition: opacity 0.3s ease;
+}
+.pe-card:hover::before, .pe-card:focus-within::before { opacity: 1; }
+.pe-card::after {
+  content: ""; position: absolute; inset: 7px; border-radius: inherit; pointer-events: none;
+  border: 1px solid color-mix(in srgb, var(--pe-gold) 20%, transparent);
+  background:
+    linear-gradient(to right,  var(--pe-gold-bright) 2px, transparent 2px) 0 0 / 15px 15px no-repeat,
+    linear-gradient(to bottom, var(--pe-gold-bright) 2px, transparent 2px) 0 0 / 15px 15px no-repeat,
+    linear-gradient(to left,   var(--pe-gold-bright) 2px, transparent 2px) 100% 0 / 15px 15px no-repeat,
+    linear-gradient(to bottom, var(--pe-gold-bright) 2px, transparent 2px) 100% 0 / 15px 15px no-repeat,
+    linear-gradient(to right,  var(--pe-gold-bright) 2px, transparent 2px) 0 100% / 15px 15px no-repeat,
+    linear-gradient(to top,    var(--pe-gold-bright) 2px, transparent 2px) 0 100% / 15px 15px no-repeat,
+    linear-gradient(to left,   var(--pe-gold-bright) 2px, transparent 2px) 100% 100% / 15px 15px no-repeat,
+    linear-gradient(to top,    var(--pe-gold-bright) 2px, transparent 2px) 100% 100% / 15px 15px no-repeat;
+  opacity: 0.38; transition: opacity 0.3s ease;
+}
+.pe-card:hover::after, .pe-card:focus-within::after { opacity: 0.95; }
+a.pe-card:focus-visible { outline: 2px solid var(--pe-gold-bright); outline-offset: 3px; }
+.pe-card__icon { box-shadow: 0 0 0 1px color-mix(in srgb, var(--pe-gold) 35%, transparent), inset 0 1px 0 rgba(232, 199, 102, 0.25); }
+
+/* ----- Global focus-visible, never removed ----- */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible,
+textarea:focus-visible, [role='button']:focus-visible {
+  outline: 2px solid var(--pe-gold-bright);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ----- The Eye of Horus — reading-depth mirror ----- */
+.pe-horus {
+  --p: var(--pe-read-progress, 0);
+  display: inline-grid; place-items: center;
+  width: 40px; height: 40px; border-radius: 10px;
+  color: color-mix(in srgb, var(--pe-muted) calc((1 - var(--p)) * 100%), var(--pe-gold-bright));
+  opacity: calc(0.42 + var(--p) * 0.58);
+  filter:
+    drop-shadow(0 0 calc(var(--p) * 9px) rgba(201, 162, 39, calc(var(--p) * 0.85)))
+    drop-shadow(0 0 calc(var(--p) * 22px) rgba(31, 182, 166, calc(var(--p) * 0.35)));
+  transition: color 0.35s linear, opacity 0.35s linear, filter 0.35s linear;
+  pointer-events: none;
+  margin-right: 0.15rem;
+}
+.pe-horus__iris { opacity: calc(0.25 + var(--p) * 0.75); }
+.pe-horus__pupil { filter: drop-shadow(0 0 calc(var(--p) * 6px) rgba(232, 199, 102, calc(var(--p) * 0.9))); }
+.pe-horus.is-full { animation: peHorusDawn 3.6s ease-in-out infinite; }
+@keyframes peHorusDawn {
+  0%, 100% { filter: drop-shadow(0 0 10px rgba(201, 162, 39, 0.8)) drop-shadow(0 0 26px rgba(31, 182, 166, 0.4)); }
+  50%      { filter: drop-shadow(0 0 14px rgba(232, 199, 102, 0.95)) drop-shadow(0 0 34px rgba(31, 182, 166, 0.55)); }
+}
+[data-theme='light'] .pe-horus {
+  color: color-mix(in srgb, var(--pe-muted) calc((1 - var(--p)) * 100%), #8a6413);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pe-horus { transition: none; }
+  .pe-horus.is-full { animation: none; filter: drop-shadow(0 0 12px rgba(201, 162, 39, 0.85)); }
+  .navbar::after { animation: none !important; }
+}
+
+/* ----- SFX toggle (navbar) ----- */
+.pe-sfxbtn {
+  width: 40px; height: 40px; border-radius: 10px;
+  display: inline-grid; place-items: center;
+  border: 1px solid var(--pe-border);
+  color: var(--ifm-navbar-link-color);
+  background: transparent; cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  margin-left: 0.15rem;
+}
+.pe-sfxbtn:hover { border-color: var(--pe-gold); color: var(--pe-gold-bright); background: var(--ifm-menu-color-background-active); }
+.pe-sfxbtn[aria-pressed='true'] { border-color: var(--pe-gold); color: var(--pe-gold-bright); box-shadow: 0 0 12px rgba(201, 162, 39, 0.35); }

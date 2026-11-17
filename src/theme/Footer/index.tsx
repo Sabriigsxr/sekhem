@@ -127,8 +127,23 @@ export default function Footer(): ReactElement {
             </span>
           )}
           <span className={styles.metaRight}>
-            Based on PentestingEverything (MIT) · Redesigned by Dev Ahmed Sabry
+            Based on{' '}
+            <a href="https://github.com/m14r41/PentestingEverything" target="_blank" rel="noopener noreferrer">
+              PentestingEverything
+            </a>{' '}
+            (MIT) · Redesigned by{' '}
+            <a href="https://github.com/sabriigsxr" target="_blank" rel="noopener noreferrer">
+              Dev Ahmed Sabry
+            </a>{' '}
+            · <a href="https://wa.me/201284123811" target="_blank" rel="noopener noreferrer">+20 128 412 3811</a>
           </span>
+        </div>
+        <div className={styles.metaCredits}>
+          <a href="https://github.com/sabriigsxr" target="_blank" rel="noopener noreferrer">github.com/sabriigsxr</a>
+          <span aria-hidden="true">◆</span>
+          <a href="https://www.instagram.com/ahmedsabriigsxr1000" target="_blank" rel="noopener noreferrer">instagram.com/ahmedsabriigsxr1000</a>
+          <span aria-hidden="true">◆</span>
+          <a href="https://wa.me/201284123811" target="_blank" rel="noopener noreferrer">wa.me/201284123811</a>
         </div>
       </div>
     </footer>

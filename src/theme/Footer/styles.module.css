@@ -113,3 +113,19 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.metaCredits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.9rem;
+  padding: 0.9rem 0 0.1rem;
+  border-top: 1px solid var(--fe-border, var(--pe-border));
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  color: var(--pe-muted);
+  margin-top: 0.9rem;
+}
+.metaCredits a { color: var(--pe-muted); text-decoration: none; }
+.metaCredits a:hover { color: var(--pe-gold-bright); }
