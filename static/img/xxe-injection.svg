@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" role="img" aria-labelledby="title desc">
+  <title id="title">XML External Entity injection overview</title>
+  <desc id="desc">A client sends XML to an application, the application resolves an external entity, and sensitive data is returned or sent to an attacker-controlled host.</desc>
+  <rect width="960" height="280" fill="#0b0908"/>
+  <g fill="none" stroke="#c7a45a" stroke-width="4">
+    <rect x="40" y="70" width="220" height="140" rx="12"/>
+    <rect x="370" y="70" width="220" height="140" rx="12"/>
+    <rect x="700" y="70" width="220" height="140" rx="12"/>
+  </g>
+  <g fill="#e8dcc0" font-family="sans-serif" text-anchor="middle">
+    <text x="150" y="125" font-size="24">Attacker</text>
+    <text x="150" y="158" font-size="18">malicious XML</text>
+    <text x="480" y="125" font-size="24">Application</text>
+    <text x="480" y="158" font-size="18">entity resolver</text>
+    <text x="810" y="125" font-size="24">File / Service</text>
+    <text x="810" y="158" font-size="18">sensitive data</text>
+  </g>
+  <g fill="none" stroke="#45c0b1" stroke-width="5" stroke-dasharray="10 8">
+    <path d="M260 140H370"/>
+    <path d="M590 140H700"/>
+  </g>
+  <g fill="#45c0b1">
+    <path d="M370 140l-18-10v20z"/>
+    <path d="M700 140l-18-10v20z"/>
+  </g>
+</svg>

@@ -12,7 +12,7 @@ SEKHEM is a redesign of [PentestingEverything](https://github.com/m14r41/Pentest
 
 ## Live site
 
-Configured via `SITE_URL` (default `https://sekhem.pages.dev`). Set your own domain with the `SITE_URL` env var or in `docusaurus.config.ts`.
+Production: <https://sabriigsxr.github.io/sekhem/>. Configured via `SITE_URL` (default `https://sabriigsxr.github.io`) and `BASE_URL` (default `/sekhem/`).
 
 ## What's inside
 
@@ -26,8 +26,8 @@ Configured via `SITE_URL` (default `https://sekhem.pages.dev`). Set your own dom
 ## Attribution (required by MIT — kept, not courtesy)
 
 - **Original work**: PentestingEverything by Madhurendra Kumar (m14r41) — https://github.com/m14r41/PentestingEverything
-- **Original license**: MIT (see [`LICENSE`](./LICENSE) and [`NOTICE.md`](./NOTICE.md))
-- **Third-party PDFs** in this repository are the property of their respective owners, redistributed in good faith for education. See [`CONTENT_REMOVAL.md`](./CONTENT_REMOVAL.md) — takedown or re-attribution requests are handled promptly and without dispute.
+- **Original license**: MIT (see [LICENSE](https://github.com/sabriigsxr/sekhem/blob/main/LICENSE) and [NOTICE.md](https://github.com/sabriigsxr/sekhem/blob/main/NOTICE.md))
+- **Third-party PDFs** in this repository are the property of their respective owners, redistributed in good faith for education. See [CONTENT_REMOVAL.md](https://github.com/m14r41/PentestingEverything/blob/main/CONTENT_REMOVAL.md) — takedown or re-attribution requests are handled promptly and without dispute.
 - **Redesign & SEKHEM identity**: Dev Ahmed Sabry — GitHub [sabriigsxr](https://github.com/sabriigsxr) · Instagram [@ahmedsabriigsxr1000](https://www.instagram.com/ahmedsabriigsxr1000) · WhatsApp [+20 128 412 3811](https://wa.me/201284123811)
 
 ## Develop
@@ -54,4 +54,4 @@ Environment overrides: `SITE_URL`, `BASE_URL`, `GH_ORG`, `GH_REPO`, `GH_BRANCH`.
 ## License
 
 MIT © 2023 Madhurendra Kumar (upstream) · SEKHEM redesign © 2026 Dev Ahmed Sabry.
-See [`LICENSE`](./LICENSE) and [`NOTICE.md`](./NOTICE.md).
+See [LICENSE](https://github.com/sabriigsxr/sekhem/blob/main/LICENSE) and [NOTICE.md](https://github.com/sabriigsxr/sekhem/blob/main/NOTICE.md).

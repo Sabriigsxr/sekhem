@@ -568,7 +568,7 @@
     "words": 481
   },
   "/web-application-pentesting/vulnerabilities/xml-external-entity-xxe": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -577,7 +577,7 @@
       "Vulnerabilities",
       "XML External Entity (XXE)"
     ],
-    "words": 294
+    "words": 305
   },
   "/web-application-pentesting/vulnerabilities/xss": {
     "readingTime": 11,
@@ -1471,13 +1471,13 @@
     "words": 0
   },
   "/overview": {
-    "readingTime": 10,
+    "readingTime": 2,
     "difficulty": "Beginner",
     "platform": "General",
     "tags": [
       "Overview"
     ],
-    "words": 1970
+    "words": 351
   },
   "/overview/help": {
     "readingTime": 3,

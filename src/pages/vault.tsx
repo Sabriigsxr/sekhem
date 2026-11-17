@@ -2,6 +2,7 @@ import React, {useMemo, useState} from 'react';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import {ArrowLeft, Search, FileText, ShieldCheck, Copy, Check, Download, Lock} from 'lucide-react';
 import styles from './vault.module.css';
 import vault from '@site/src/data/vault.json';
@@ -19,6 +20,7 @@ const fmtSize = (bytes: number): string => {
 
 export default function Vault(): React.JSX.Element {
   const [query, setQuery] = useState('');
+  const baseUrl = useBaseUrl('/');
   const [category, setCategory] = useState<string>('all');
   const [copied, setCopied] = useState<string | null>(null);
 
@@ -117,7 +119,7 @@ export default function Vault(): React.JSX.Element {
                     {copied === f.id ? <Check size={14} /> : <Copy size={14} />}
                   </button>
                 </div>
-                <a className={styles.download} href={f.path} download>
+                <a className={styles.download} href={`${baseUrl}${f.path.replace(/^\/+/, '')}`} download>
                   <Download size={15} /> Download PDF
                 </a>
               </li>

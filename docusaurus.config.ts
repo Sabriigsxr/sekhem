@@ -9,8 +9,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // Everything is env-overridable for forks or alternate hosting.
 const ORG = process.env.GH_ORG ?? 'sabriigsxr';
 const REPO = process.env.GH_REPO ?? 'sekhem';
-const SITE_URL = process.env.SITE_URL ?? 'https://sekhem.pages.dev';
-const BASE_URL = process.env.BASE_URL ?? '/';
+const SITE_URL = process.env.SITE_URL ?? 'https://sabriigsxr.github.io';
+const BASE_URL = process.env.BASE_URL ?? '/sekhem/';
 const GITHUB_URL = `https://github.com/${ORG}/${REPO}`;
 
 const config: Config = {
@@ -28,9 +28,9 @@ const config: Config = {
 
   // Messy upstream markdown — warn rather than fail so the build always completes,
   // while still surfacing issues in CI logs for incremental cleanup.
-  onBrokenLinks: 'warn',
-  onBrokenAnchors: 'warn',
-  onDuplicateRoutes: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
+  onDuplicateRoutes: 'throw',
 
   i18n: {
     defaultLocale: 'en',
@@ -42,9 +42,6 @@ const config: Config = {
   // while still allowing real .mdx pages to use full MDX.
   markdown: {
     format: 'detect',
-    hooks: {
-      onBrokenMarkdownLinks: 'warn',
-    },
   },
 
   themes: [
