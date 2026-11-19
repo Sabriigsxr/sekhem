@@ -140,7 +140,6 @@ const config: Config = {
         {to: '/vault', label: 'The Tomb', position: 'left'},
         {to: '/scarab', label: 'The Scarab', position: 'left'},
         {to: '/wallpapers', label: 'Wallpapers', position: 'left'},
-        {to: '/contributing', label: 'Contribute', position: 'left'},
         {
           type: 'custom-horusEye',
           position: 'right',

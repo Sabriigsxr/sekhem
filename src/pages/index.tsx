@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import {ArrowRight, BookOpen, Search, FileText, Route, Github, Instagram, MessageCircle, ScrollText, Vault, ListChecks, Pyramid, ShieldCheck} from 'lucide-react';
 import CategoryIcon from '@site/src/components/CategoryIcon';
 import manifest from '@site/src/data/manifest.json';
+import SkCard from '@site/src/components/SkCard';
 import styles from './index.module.css';
 
 type Category = {key: string; label: string; slug: string; docs: number; pdfs: number; platform: string};
@@ -98,21 +99,28 @@ function Relics(): React.JSX.Element {
         <div className="pe-grid pe-grid--3">
           {relics.map((r) =>
             r.live ? (
-              <Link key={r.title} className="pe-card" to={r.to}>
-                <div className={styles.relicStatusLive}>{r.status}</div>
-                <div className="pe-card__icon">{r.icon}</div>
-                <h3 className="pe-card__title">{r.title}</h3>
-                <p className="pe-card__desc">{r.desc}</p>
-                <div className="pe-card__meta"><span>{r.cta} <ArrowRight size={13} style={{verticalAlign: '-2px'}} /></span></div>
-              </Link>
+              <SkCard
+                key={r.title}
+                kind="relic"
+                icon={r.icon}
+                title={r.title}
+                description={r.desc}
+                status={r.status}
+                href={r.to}
+                meta={[`${r.cta} ›`]}
+              />
             ) : (
-              <div key={r.title} className={`pe-card ${styles.relicSealed}`} aria-disabled="true">
-                <div className={styles.relicStatusSealed}>{r.status}</div>
-                <div className="pe-card__icon">{r.icon}</div>
-                <h3 className="pe-card__title">{r.title}</h3>
-                <p className="pe-card__desc">{r.desc}</p>
-                <div className="pe-card__meta"><span>{r.cta}</span></div>
-              </div>
+              <SkCard
+                key={r.title}
+                kind="relic"
+                icon={r.icon}
+                title={r.title}
+                description={r.desc}
+                status={r.status}
+                sealed
+                className={styles.relicSealed}
+                meta={[r.cta]}
+              />
             ),
           )}
         </div>
@@ -133,15 +141,15 @@ function Categories(): React.JSX.Element {
         </div>
         <div className="pe-grid pe-grid--4">
           {categories.map((c) => (
-            <Link key={c.key} className="pe-card" to={c.slug}>
-              <div className="pe-card__icon"><CategoryIcon categoryKey={c.key} /></div>
-              <h3 className="pe-card__title">{c.label}</h3>
-              <p className="pe-card__desc">{c.platform} security testing</p>
-              <div className="pe-card__meta">
-                <span>{c.docs} docs</span>
-                {c.pdfs > 0 && <span>{c.pdfs} PDFs</span>}
-              </div>
-            </Link>
+            <SkCard
+              key={c.key}
+              kind="category"
+              icon={<CategoryIcon categoryKey={c.key} />}
+              title={c.label}
+              description={`${c.platform} security testing`}
+              href={c.slug}
+              meta={[`${c.docs} docs`, ...(c.pdfs > 0 ? [`${c.pdfs} PDFs`] : [])]}
+            />
           ))}
         </div>
       </div>
@@ -164,11 +172,13 @@ function Features(): React.JSX.Element {
         </div>
         <div className="pe-grid pe-grid--3">
           {items.map((f) => (
-            <div key={f.title} className="pe-card">
-              <div className="pe-card__icon">{f.icon}</div>
-              <h3 className="pe-card__title">{f.title}</h3>
-              <p className="pe-card__desc">{f.desc}</p>
-            </div>
+            <SkCard
+              key={f.title}
+              kind="feature"
+              icon={f.icon}
+              title={f.title}
+              description={f.desc}
+            />
           ))}
         </div>
       </div>
@@ -187,12 +197,15 @@ function Paths(): React.JSX.Element {
         </div>
         <div className="pe-grid pe-grid--3">
           {LEARNING_PATHS.map((p) => (
-            <Link key={p.title} className="pe-card" to={p.slug}>
-              <div className="pe-card__icon"><Route size={22} /></div>
-              <h3 className="pe-card__title">{p.title}</h3>
-              <p className="pe-card__desc">{p.desc}</p>
-              <div className="pe-card__meta"><span>Start path <ArrowRight size={13} style={{verticalAlign: '-2px'}} /></span></div>
-            </Link>
+            <SkCard
+              key={p.title}
+              kind="path"
+              icon={<Route size={22} />}
+              title={p.title}
+              description={p.desc}
+              href={p.slug}
+              meta={[`Start path ${'›'}`]}
+            />
           ))}
         </div>
         <div style={{textAlign: 'center', marginTop: '2rem'}}>
