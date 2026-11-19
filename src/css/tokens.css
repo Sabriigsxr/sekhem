@@ -1,0 +1,149 @@
+/**
+ * SEKHEM Design Tokens — generated from DESIGN_SYSTEM.md (Generator #1) and
+ * translated to CSS by Generator #9 (Design-to-Code Translator).
+ *
+ * Namespace: --sk-* (parallel to Docusaurus --ifm-* and legacy --pe-* tokens).
+ * Light values live in :root; dark overrides in [data-theme='dark'].
+ * All color pairings were contrast-tested (see DESIGN_SYSTEM.md §1.1).
+ */
+
+:root {
+  /* ---- Color · light (papyrus) ---- */
+  --sk-bg: #f3ecdc;
+  --sk-surface: #efe6d2;
+  --sk-card: #faf4e6;
+  --sk-border: #d8cbae;
+  --sk-text: #0b0908;
+  --sk-muted: #6f6244;
+  --sk-ink: #0b0908;
+  --sk-gold: #8a6413;
+  --sk-gold-bright: #caa53f;
+  --sk-faience: #0f766e;
+  --sk-scarab: #15803d;
+  --sk-blood: #8c2f2f;
+  --sk-gold-grad: linear-gradient(135deg, #caa53f 0%, #8a6413 100%);
+
+  /* ---- Semantic ---- */
+  --sk-success: #15803d;
+  --sk-warning: #8a6413;
+  --sk-error: #8c2f2f;
+  --sk-info: #0f766e;
+
+  /* ---- Typography ---- */
+  --sk-font-display: 'Cinzel Decorative', 'Cinzel', serif;
+  --sk-font-heading: 'Cinzel', 'Spectral', serif;
+  --sk-font-body: 'Spectral', Georgia, 'Times New Roman', serif;
+  --sk-font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --sk-fs-display: 3rem;
+  --sk-fs-h1: 2.5rem;
+  --sk-fs-h2: 1.75rem;
+  --sk-fs-h3: 1.125rem;
+  --sk-fs-body: 1.0625rem;
+  --sk-fs-caption: 0.75rem;
+  --sk-lh-body: 1.85;
+  --sk-lh-tight: 1.15;
+  --sk-track-caption: 0.06em;
+
+  /* ---- Spacing (8px base) ---- */
+  --sk-space-1: 4px;
+  --sk-space-2: 8px;
+  --sk-space-3: 12px;
+  --sk-space-4: 16px;
+  --sk-space-6: 24px;
+  --sk-space-8: 32px;
+  --sk-space-12: 48px;
+  --sk-space-16: 64px;
+  --sk-space-24: 96px;
+  --sk-space-32: 128px;
+
+  /* ---- Radius ---- */
+  --sk-radius-sm: 6px;
+  --sk-radius-md: 8px;
+  --sk-radius-lg: 12px;
+  --sk-radius-xl: 16px;
+  --sk-radius-pill: 999px;
+  --sk-radius-stele: 4px 4px 16px 16px;
+
+  /* ---- Shadow / elevation ---- */
+  --sk-shadow-card: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  --sk-shadow-hover: 0 18px 44px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(201, 162, 39, 0.4), 0 0 34px rgba(201, 162, 39, 0.14);
+  --sk-shadow-gold: 0 0 18px rgba(201, 162, 39, 0.35);
+
+  /* ---- Layout ---- */
+  --sk-container: 1320px;
+  --sk-reading: 44rem;
+  --sk-sidebar: 310px;
+  --sk-gutter: 24px;
+  --sk-margin: 32px;
+
+  /* ---- Motion ---- */
+  --sk-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --sk-dur-micro: 120ms;
+  --sk-dur-ui: 200ms;
+  --sk-dur-ui-hi: 240ms;
+}
+
+[data-theme='dark'] {
+  /* ---- Color · dark (obsidian) ---- */
+  --sk-bg: #0b0908;
+  --sk-surface: #14100d;
+  --sk-card: #171411;
+  --sk-border: #2a241d;
+  --sk-text: #f3ecdc;
+  --sk-muted: #a89f8a;
+  --sk-ink: #1a1408;
+  --sk-gold: #c9a227;
+  --sk-gold-bright: #e8c766;
+  --sk-faience: #1fb6a6;
+  --sk-scarab: #3ddc97;
+  --sk-blood: #a04444; /* large text/borders only — 3.22:1 on bg */
+  --sk-gold-grad: linear-gradient(135deg, #caa53f 0%, #8a6413 100%);
+
+  --sk-success: #3ddc97;
+  --sk-warning: #e8c766;
+  --sk-error: #a04444;
+  --sk-info: #1fb6a6;
+}
+
+/* Design-to-Code primitives. Opt-in via the `sk-*` class prefix so existing
+   `--pe-*` components are unaffected; both namespaces share identical values. */
+.sk-card {
+  background: var(--sk-card);
+  border: 1px solid var(--sk-border);
+  border-radius: var(--sk-radius-stele);
+  padding: var(--sk-space-8);
+  box-shadow: var(--sk-shadow-card);
+  transition: transform var(--sk-dur-ui-hi) var(--sk-ease), box-shadow var(--sk-dur-ui-hi) var(--sk-ease);
+}
+.sk-card:hover { transform: translateY(-4px); box-shadow: var(--sk-shadow-hover); }
+
+.sk-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sk-space-2);
+  font-family: var(--sk-font-heading);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  padding: 0.55rem 1.05rem;
+  border-radius: var(--sk-radius-md);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform var(--sk-dur-ui) var(--sk-ease), box-shadow var(--sk-dur-ui) var(--sk-ease);
+}
+.sk-btn--primary { background: var(--sk-gold-grad); color: var(--sk-ink); box-shadow: var(--sk-shadow-gold); }
+.sk-btn--primary:hover { transform: translateY(-1px); }
+.sk-btn--ghost { color: var(--sk-gold-bright); background: transparent; border-color: var(--sk-gold); }
+
+.sk-focus:focus-visible {
+  outline: 2px solid var(--sk-gold-bright);
+  outline-offset: 2px;
+  border-radius: var(--sk-radius-sm);
+}
+
+.sk-reading { max-width: var(--sk-reading); margin-inline: auto; line-height: var(--sk-lh-body); }
+
+@media (prefers-reduced-motion: reduce) {
+  .sk-card, .sk-btn { transition: none; }
+  .sk-card:hover, .sk-btn--primary:hover { transform: none; }
+}

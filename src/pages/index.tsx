@@ -292,8 +292,8 @@ export default function Home(): React.JSX.Element {
           })}
         </script>
       </Head>
-      <Hero />
       <main>
+        <Hero />
         <Relics />
         <Categories />
         <Features />

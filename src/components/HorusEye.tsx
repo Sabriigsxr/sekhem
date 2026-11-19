@@ -7,7 +7,7 @@ import React from 'react';
  */
 export default function HorusEye(): React.JSX.Element {
   return (
-    <span className="pe-horus" role="img" aria-label="Reading depth indicator" aria-hidden="true" title="Reading depth">
+    <span className="pe-horus" aria-hidden="true" title="Reading depth">
       <svg className="pe-horus__svg" viewBox="0 0 32 20" width="28" height="18" aria-hidden="true" focusable="false">
         <defs>
           <radialGradient id="peIrisGrad" cx="0.5" cy="0.5" r="0.5">

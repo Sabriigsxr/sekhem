@@ -1,4 +1,66 @@
+# SEKHEM — The Pharaoh's Pentest Codex
+# https://sabriigsxr.github.io/sekhem/
+#
+# Open, MIT-licensed knowledge base. Crawling and indexing are welcome.
+
+# ---- General access -----------------------------------------------------------
 User-agent: *
 Allow: /
 
-Sitemap: https://pentesting.m14r41.in/sitemap.xml
+# ---- AI search crawlers -------------------------------------------------------
+# These fetch pages used to answer user queries; allowing them keeps SEKHEM
+# discoverable in AI-assisted search results.
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+User-agent: Claude-SearchBot
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+User-agent: PerplexityBot
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+# ---- AI training crawlers -----------------------------------------------------
+# Content is openly licensed (MIT), so training use is permitted.
+User-agent: GPTBot
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+User-agent: ClaudeBot
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+User-agent: Google-Extended
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+User-agent: Applebot-Extended
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+User-agent: CCBot
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+User-agent: Bytespider
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+User-agent: Amazonbot
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+# ---- User-triggered fetchers --------------------------------------------------
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ---- Discovery ---------------------------------------------------------------
+Sitemap: https://sabriigsxr.github.io/sekhem/sitemap.xml

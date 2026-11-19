@@ -1,0 +1,56 @@
+# SEKHEM — The Pharaoh's Pentest Codex
+
+> An open-source, static, searchable penetration-testing knowledge base:
+> methodology, checklists, payloads and commands across 24 domains. No logins,
+> no telemetry. Redesigned and maintained by Dev Ahmed Sabry; based on
+> PentestingEverything by m14r41 (MIT © 2023 Madhurendra Kumar).
+
+SEKHEM is a reading-first codex of offensive-security reference material. It
+contains 124 documentation pages and 104 curated PDF references covering web,
+API, cloud, mobile, network, Active Directory, OSINT and 18 further domains.
+All content is static, free, and openly licensed.
+
+## Start here
+
+- [The Codex (overview)](https://sabriigsxr.github.io/sekhem/overview): entry point to the full methodology
+- [Learning paths](https://sabriigsxr.github.io/sekhem/learning-paths): guided routes through the material
+- [References library](https://sabriigsxr.github.io/sekhem/references): all reference documents in one place
+- [The Tomb (vault)](https://sabriigsxr.github.io/sekhem/vault): 104 PDFs, each with a SHA-256 seal
+- [The Scarab (checklist)](https://sabriigsxr.github.io/sekhem/scarab): local-first WebApp & API assessments
+- [Contributing](https://sabriigsxr.github.io/sekhem/contributing): how to contribute
+
+## Attack-surface domains
+
+- [Web Application Pentesting](https://sabriigsxr.github.io/sekhem/web-application-pentesting): 53 docs, 43 PDFs — recon through OWASP Top 10 and reporting
+- [API Pentesting](https://sabriigsxr.github.io/sekhem/api-pentesting): 4 docs, 14 PDFs — REST/GraphQL testing
+- [Secure Code Review](https://sabriigsxr.github.io/sekhem/secure-code-review): 12 docs, 3 PDFs — source-code security
+- [Mobile Pentesting](https://sabriigsxr.github.io/sekhem/mobile-pentesting): 9 docs, 3 PDFs — Android and iOS
+- [Thick Client Pentesting](https://sabriigsxr.github.io/sekhem/thick-client-pentesting): 5 docs, 1 PDF
+- [Cloud Pentesting](https://sabriigsxr.github.io/sekhem/cloud-pentesting): 5 docs, 6 PDFs — AWS, Azure, GCP
+- [Network Pentesting](https://sabriigsxr.github.io/sekhem/network-pentesting): 5 docs, 9 PDFs
+- [Firewall Penetration](https://sabriigsxr.github.io/sekhem/firewall-penetration): 2 docs, 1 PDF
+- [Infrastructure Security](https://sabriigsxr.github.io/sekhem/infrastructure-security): 1 doc, 3 PDFs
+- [Active Directory Pentesting](https://sabriigsxr.github.io/sekhem/active-directory-pentesting): 1 doc, 6 PDFs
+- [Container & Kubernetes Assessment](https://sabriigsxr.github.io/sekhem/container-and-kubernetes-assessment): 1 doc, 1 PDF
+- [IoT Pentesting](https://sabriigsxr.github.io/sekhem/iot-pentesting): 2 docs
+- [Wi-Fi Pentesting](https://sabriigsxr.github.io/sekhem/wi-fi-pentesting): 2 docs, 2 PDFs
+- [Blockchain Pentesting](https://sabriigsxr.github.io/sekhem/blockchain-pentesting): 2 docs
+- [OSINT](https://sabriigsxr.github.io/sekhem/osint): 1 doc, 6 PDFs
+- [Phishing Assessment](https://sabriigsxr.github.io/sekhem/phishing-assessment): 2 docs
+- [Configuration Review](https://sabriigsxr.github.io/sekhem/configuration-review): 2 docs
+- [DevSecOps](https://sabriigsxr.github.io/sekhem/devsecops): 2 docs, 3 PDFs
+- [CI/CD Pentesting](https://sabriigsxr.github.io/sekhem/ci-cd-pentesting): 2 docs, 1 PDF
+- [Threat Modeling](https://sabriigsxr.github.io/sekhem/threat-modeling): 1 doc, 1 PDF
+- [Forensic](https://sabriigsxr.github.io/sekhem/forensic): 4 docs, 1 PDF
+
+## AI / agent security
+
+- [LLM Security Assessment](https://sabriigsxr.github.io/sekhem/llm-security-assessment)
+- [MCP Security Assessment](https://sabriigsxr.github.io/sekhem/mcp-security-assessment)
+- [A2A Security Assessment](https://sabriigsxr.github.io/sekhem/a2a-security-assessment)
+
+## Machine-readable
+
+- [Sitemap](https://sabriigsxr.github.io/sekhem/sitemap.xml)
+- [Source repository](https://github.com/sabriigsxr/sekhem)
+- [Upstream project — PentestingEverything (MIT)](https://github.com/m14r41/PentestingEverything)

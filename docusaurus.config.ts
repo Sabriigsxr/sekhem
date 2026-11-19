@@ -98,6 +98,11 @@ const config: Config = {
       tagName: 'meta',
       attributes: {name: 'theme-color', content: '#0b0908'},
     },
+    {
+      // LLM-friendly site overview (llmstxt.org) for AI agents and crawlers.
+      tagName: 'link',
+      attributes: {rel: 'alternate', type: 'text/plain', href: `${BASE_URL}llms.txt`, title: 'llms.txt'},
+    },
   ],
 
   themeConfig: {

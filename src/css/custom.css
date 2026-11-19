@@ -9,6 +9,9 @@
  * redesigned by Dev Ahmed Sabry.
  */
 
+/* Generated design tokens (--sk-* namespace) — see DESIGN_SYSTEM.md / tokens.css */
+@import './tokens.css';
+
 @font-face {
   font-family: 'Cinzel Decorative';
   font-style: normal;
