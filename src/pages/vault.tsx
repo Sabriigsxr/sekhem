@@ -125,7 +125,20 @@ export default function Vault(): React.JSX.Element {
               </li>
             ))}
             {visible.length === 0 && (
-              <li className={styles.empty}>Nothing in the tomb matches “{query}”. Try fewer letters.</li>
+              <li className={styles.empty}>
+                <Lock size={28} aria-hidden="true" />
+                <h2 className={styles.emptyTitle}>Nothing sealed here yet.</h2>
+                <p className={styles.emptyText}>
+                  No references match “{query}”{category !== 'all' ? ` in ${prettyCategory(category)}` : ''}.
+                  Try another domain or clear your filters.
+                </p>
+                <div className={styles.emptyActions}>
+                  <button type="button" className="pe-btn pe-btn--primary pe-btn--sm" onClick={() => { setQuery(''); setCategory('all'); }}>
+                    Clear filters
+                  </button>
+                  <Link to="/references" className="pe-btn pe-btn--ghost pe-btn--sm">Browse references</Link>
+                </div>
+              </li>
             )}
           </ul>
 

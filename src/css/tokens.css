@@ -21,6 +21,7 @@
   --sk-faience: #0f766e;
   --sk-scarab: #15803d;
   --sk-blood: #8c2f2f;
+  --sk-blood-text: #8c2f2f;
   --sk-gold-grad: linear-gradient(135deg, #caa53f 0%, #8a6413 100%);
 
   /* ---- Semantic ---- */
@@ -96,12 +97,13 @@
   --sk-gold-bright: #e8c766;
   --sk-faience: #1fb6a6;
   --sk-scarab: #3ddc97;
-  --sk-blood: #a04444; /* large text/borders only — 3.22:1 on bg */
+  --sk-blood: #a04444; /* borders/icons only — 3.22:1 on bg */
+  --sk-blood-text: #d98080; /* AA text on card/bg — 6.42:1 / 6.95:1 */
   --sk-gold-grad: linear-gradient(135deg, #caa53f 0%, #8a6413 100%);
 
   --sk-success: #3ddc97;
   --sk-warning: #e8c766;
-  --sk-error: #a04444;
+  --sk-error: #c46a6a; /* AA-compliant error text — 4.91:1 on card */
   --sk-info: #1fb6a6;
 }
 

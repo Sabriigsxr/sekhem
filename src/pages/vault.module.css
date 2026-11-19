@@ -74,6 +74,16 @@
 }
 .download:hover { transform: translateY(-1px); }
 
-.empty { grid-column: 1 / -1; text-align: center; color: var(--pe-muted); padding: 3rem 1rem; font-style: italic; }
+.empty {
+  grid-column: 1 / -1; text-align: center; color: var(--pe-muted);
+  padding: 3rem 1rem; display: flex; flex-direction: column;
+  align-items: center; gap: 0.75rem;
+  border: 1px dashed var(--pe-border); border-radius: 12px;
+  background: var(--pe-card-bg);
+}
+.empty > svg { color: var(--pe-faience); opacity: 0.8; }
+.emptyTitle { font-family: 'Cinzel', serif; font-size: 1.15rem; color: var(--ifm-font-color-base); margin: 0; }
+.emptyText { margin: 0; max-width: 34rem; font-style: italic; line-height: 1.6; }
+.emptyActions { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; margin-top: 0.35rem; }
 .legal { max-width: 60rem; margin: 2rem auto 0; text-align: center; font-size: 0.8rem; color: var(--pe-muted); line-height: 1.6; }
 .legal a { color: var(--pe-gold-bright); }

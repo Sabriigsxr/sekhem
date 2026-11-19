@@ -36,6 +36,18 @@ function Row({item}: {item: RefItem}): React.JSX.Element {
  * sub-area. Replaces the previous one-page-per-PDF layout to keep the sidebar clean.
  */
 export default function ReferenceList({groups}: {groups: Group[]}): React.JSX.Element {
+  const referencesUrl = useBaseUrl('/references');
+  const isEmpty = groups.every((g) => g.items.length === 0);
+  if (isEmpty) {
+    return (
+      <div className="pe-ref-list" role="status">
+        <p className="pe-card__desc" style={{marginBottom: '0.75rem'}}>
+          No references match this filter. Try another domain or browse the full library.
+        </p>
+        <a className="pe-btn pe-btn--ghost pe-btn--sm" href={referencesUrl}>Browse references</a>
+      </div>
+    );
+  }
   return (
     <div className="pe-ref-list">
       {groups.map((g) => (
