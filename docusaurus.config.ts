@@ -24,7 +24,6 @@ const config: Config = {
   organizationName: ORG,
   projectName: REPO,
   trailingSlash: false,
-  deploymentBranch: 'gh-pages',
 
   // Messy upstream markdown — warn rather than fail so the build always completes,
   // while still surfacing issues in CI logs for incremental cleanup.
