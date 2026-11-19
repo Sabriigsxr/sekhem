@@ -26,9 +26,6 @@ jobs:
         with:
           fetch-depth: 0 # full history so `last_update` dates resolve from git
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
