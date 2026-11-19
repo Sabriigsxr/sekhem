@@ -54,7 +54,7 @@ function Hero(): React.JSX.Element {
           <p className={`${styles.subtitle} pe-rise pe-rise--d2`}>
             Methodology, references and field proof across 24 domains of offensive
             security — web, API, cloud, mobile, network, Active Directory and more.
-            One static, offline-capable codex. No logins. No telemetry. No mercy for blind spots.
+            One static codex with search that runs in your browser. No logins. No telemetry. No mercy for blind spots.
           </p>
           <div className={`${styles.actions} pe-rise pe-rise--d3`}>
             <Link className="pe-btn pe-btn--primary" to="/overview">
@@ -151,7 +151,7 @@ function Categories(): React.JSX.Element {
 
 function Features(): React.JSX.Element {
   const items = [
-    {icon: <Search size={22} />, title: 'Instant local search', desc: 'Fully static, offline-capable search with Ctrl/Cmd + K — fuzzy matching and in-page highlighting, nothing leaves your machine.'},
+    {icon: <Search size={22} />, title: 'Instant local search', desc: 'Fully static search with Ctrl/Cmd + K — fuzzy matching and in-page highlighting, run in your browser with no external service.'},
     {icon: <FileText size={22} />, title: 'Reference vault', desc: '100+ curated PDFs with clean open & download actions, cross-linked to the written methodology throughout.'},
     {icon: <BookOpen size={22} />, title: 'Reading-first codex', desc: 'Reading progress, estimated time, comfortable papyrus typography, dark stele theme by default.'},
   ];
@@ -265,7 +265,7 @@ export default function Home(): React.JSX.Element {
         <title>SEKHEM — The Pharaoh&rsquo;s Pentest Codex</title>
         <meta
           name="description"
-          content="SEKHEM: an open-source, static, offline-capable penetration-testing codex — methodology, checklists, payloads and commands across web, API, cloud, mobile, network, AD & OSINT. Redesigned by Dev Ahmed Sabry; based on PentestingEverything (MIT)."
+          content="SEKHEM: an open-source, static, searchable penetration-testing codex — methodology, checklists, payloads and commands across web, API, cloud, mobile, network, AD & OSINT. Redesigned by Dev Ahmed Sabry; based on PentestingEverything (MIT)."
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="SEKHEM — The Pharaoh’s Pentest Codex" />

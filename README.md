@@ -1,6 +1,6 @@
 # SEKHEM — The Pharaoh's Pentest Codex
 
-> A practical, offline-capable penetration testing knowledge base — static, searchable, and yours. **Redesigned & maintained by Dev Ahmed Sabry.**
+> A practical penetration testing knowledge base — static, searchable, and yours. **Redesigned & maintained by Dev Ahmed Sabry.**
 >
 > SEKHEM is a redesign (identity, theme, presentation) of **[PentestingEverything](https://github.com/m14r41/PentestingEverything)** by **Madhurendra Kumar ([m14r41](https://github.com/m14r41))**, released under the MIT License. The original `LICENSE` and `NOTICE.md` are retained unchanged — full credit for the underlying knowledge base belongs to the original author and its contributors. This fork is published under the same MIT terms.
 
@@ -19,7 +19,7 @@ Production: <https://sabriigsxr.github.io/sekhem/>. Configured via `SITE_URL` (d
 - **124 documentation pages** of real-world pentesting methodology across **24 domains** — web, API, cloud, mobile, network, AD, LLM, OSINT and more
 - **104 reference PDFs**, served from `static/pdfs/`
 - **Fully static** — no backend, no database, no telemetry, no login
-- **Offline-capable local search** (Ctrl/Cmd + K)
+- **Local, in-browser search** (Ctrl/Cmd + K)
 - **22+ learning paths / ordered navigation** through the Codex
 - MIT-licensed code; content shared as-is from the upstream project
 

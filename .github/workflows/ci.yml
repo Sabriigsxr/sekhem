@@ -1,0 +1,46 @@
+name: CI
+
+# Checks pull requests before they can reach `main`. Builds only — never deploys.
+# Deployment stays in deploy.yml and runs on pushes to main.
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Typecheck and build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history so `last_update` dates resolve from git
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The build runs the migration first (prebuild), which generates docs/ and the
+      # data files; typecheck runs after so it sees the same tree CI deploys.
+      - name: Build site
+        env:
+          SITE_URL: https://sabriigsxr.github.io
+          BASE_URL: /sekhem/
+        run: npm run build
+
+      - name: Typecheck
+        run: npm run typecheck

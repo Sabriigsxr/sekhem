@@ -32,7 +32,7 @@ export default function ContentWrapper(props: Props): React.JSX.Element {
       {meta && (
         <div className="pe-metabar">
           <span className="pe-chip"><Clock size={13} /> {meta.readingTime} min read</span>
-          <span className={`pe-chip pe-chip--diff-${meta.difficulty}`}><Signal size={13} /> {meta.difficulty}</span>
+          <span className={`pe-chip pe-chip--diff-${meta.difficulty}`}><Signal size={13} /> {meta.difficulty} <span style={{opacity: 0.7}}>(est.)</span></span>
           {meta.platform && meta.platform !== 'General' && (
             <span className="pe-chip"><Layers size={13} /> {meta.platform}</span>
           )}

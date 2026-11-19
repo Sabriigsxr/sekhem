@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import {Github, Instagram, MessageCircle, Globe} from 'lucide-react';
+import manifest from '@site/src/data/manifest.json';
 import styles from './styles.module.css';
 
 interface FooterLinkItem {
@@ -60,9 +61,9 @@ export default function Footer(): ReactElement {
               <span>{siteConfig.title}</span>
             </div>
             <p className={styles.brandDesc}>
-              SEKHEM — the Pharaoh&apos;s pentest codex. A static, searchable,
-              offline-capable knowledge base of real-world penetration testing:
-              methodology, payloads, commands, and field references across 23 domains.
+              SEKHEM — the Pharaoh&apos;s pentest codex. A static, searchable
+              knowledge base of real-world penetration testing:
+              methodology, payloads, commands, and field references across {manifest.categories.length} domains.
               Redesigned &amp; maintained by Dev Ahmed Sabry; originally created by
               m14r41 (MIT).
             </p>
